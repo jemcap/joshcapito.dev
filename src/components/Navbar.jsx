@@ -1,23 +1,17 @@
-import React from "react";
+import Navlinks from "./Navlinks";
 
 const Navbar = () => {
   return (
     <nav className="navbar bg-base-100 flex">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">capitoj.dev</a>
+        <a href="/" className="font-bold text-xl">
+          capitoj.dev
+        </a>
       </div>
 
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Work</a>
-          </li>
-          <li>
-            <a>Contact</a>
-          </li>
-          <li>
-            <a>Download CV</a>
-          </li>
+        <ul className="flex gap-8">
+          <Navlinks />
         </ul>
       </div>
       <div className="dropdown flex lg:hidden navbar-end">
@@ -41,15 +35,7 @@ const Navbar = () => {
           tabIndex={0}
           className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
         >
-          <li>
-            <a>Work</a>
-          </li>
-          <li>
-            <a>Contact</a>
-          </li>
-          <li>
-            <a>Download CV</a>
-          </li>
+          <Navlinks />
         </ul>
       </div>
     </nav>
