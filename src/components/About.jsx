@@ -1,4 +1,6 @@
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { techStackList } from "../constants/lists";
 
 export const Highlight = ({ children, delay = 0 }) => {
   return (
@@ -34,9 +36,20 @@ export const Highlight = ({ children, delay = 0 }) => {
 };
 
 const About = () => {
+  const ref = useRef([]);
+
+  useEffect(() => {
+    ref.current.forEach((item, i) => {
+      if (item) {
+        item.style.transition = `opacity 0.5s ease ${(i + 1) * 0.2}s`;
+        item.style.opacity = 1;
+      }
+    });
+  }, []);
+
   return (
-    <>
-      <section className="w-full">
+    <div className="flex flex-col gap-y-52">
+      <section className="w-full ">
         <div className=" flex flex-col gap-10">
           <motion.h1
             initial={{ opacity: 0, x: -500 }}
@@ -70,13 +83,41 @@ const About = () => {
             rem repudiandae fugit.
           </motion.h2>
         </div>
-      </section>
-      <section>
-        <div>
-          <h1>My journey</h1>
+        <div className="flex flex-col justify-center text-7xl my-28">
+          <motion.h5
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              duration: 1.5,
+            }}
+            viewport={{ once: true }}
+            className="text-3xl mb-10"
+          >
+            I've built projects using:
+          </motion.h5>
+          <ul className="flex flex-row gap-10 flex-wrap justify-center">
+            {techStackList.map((item, i) => {
+              const { id, icon, label } = item;
+              return (
+                <li
+                  key={id}
+                  ref={(el) => (ref.current[i] = el)}
+                  className="flex flex-col justify-center items-center opacity-0"
+                >
+                  {icon}
+                  <small className="text-sm">{label}</small>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
-    </>
+      <section>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-center">
+          My journey
+        </h1>
+      </section>
+    </div>
   );
 };
 
