@@ -13,30 +13,41 @@ const Introduction = () => {
           transition={{ duration: 1, delay: totalDuration }}
           className="mb-4"
         >
-          <span className="text-sm lg:text-2xl">capitoj.dev</span>
+          <div className="flex flex-col font-light">
+            <span className="text-xs lg:text-xl">portfolio curated by</span>
+            <span className="text-sm lg:text-3xl">joshua emmanuel capito</span>
+          </div>
         </motion.h1>
-        {text.map((el, i) => (
-          <motion.span
-            key={i}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 1.5,
-              delay: i / 3.5,
-            }}
-          >
-            {el}{" "}
-          </motion.span>
-        ))}
+        <h1>
+          {text.map((el, i) => (
+            <motion.span
+              key={i}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 0.5,
+                delay: i / 3,
+              }}
+              className="font-extrabold"
+            >
+              {el}{" "}
+            </motion.span>
+          ))}
+        </h1>
       </div>
       <motion.a
         href="#"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: totalDuration }}
-        className="mt-10"
+        className="mt-32 flex flex-col justify-center items-center gap-2"
       >
-        <TfiArrowCircleDown className="text-xl lg:text-5xl font-bold text-white" />
+        <span className="font-light text-sm lg:text-xl">
+          learn more about me
+        </span>
+        <span>
+          <TfiArrowCircleDown className="text-5xl lg:text-5xl font-bold text-white" />
+        </span>
       </motion.a>
     </div>
   );
