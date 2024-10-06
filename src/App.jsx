@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import MoreAbout from "./pages/MoreAbout";
 import Home from "./pages/Home";
 import Landing from "./pages/Landing";
 import Contact from "./pages/Contact";
@@ -13,6 +13,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+      },
+      {
+        path: "/information",
+        element: <MoreAbout />,
       },
       {
         path: "/work",

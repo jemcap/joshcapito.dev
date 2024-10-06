@@ -2,10 +2,10 @@ import Navlinks from "./Navlinks";
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-base-100 flex">
+    <nav className="navbar bg-base-100 flex align-elements">
       <div className="navbar-start">
         <a href="/" className="font-bold text-xl">
-          capitoj.dev
+          joshua capito
         </a>
       </div>
 

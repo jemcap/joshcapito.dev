@@ -11,7 +11,7 @@ export const Highlight = ({ children, delay = 0 }) => {
         whileInView={{ opacity: 1 }}
       >
         <motion.span
-          className="absolute inset-0 bg-yellow-300 z-0"
+          className="absolute inset-0 bg-yellow-300 -z-10"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           transition={{ delay, duration: 0.6, ease: "easeOut" }}
@@ -20,17 +20,8 @@ export const Highlight = ({ children, delay = 0 }) => {
           }}
           viewport={{ once: true }}
         />
-        <motion.span
-          className="relative z-10"
-          initial={{ color: "#fff" }}
-          whileInView={{ color: "#000" }}
-          transition={{ delay, duration: 0.6, ease: "easeInOut" }}
-          viewport={{ once: true }}
-        >
-          {" "}
-          {children}
-        </motion.span>
-      </motion.span>{" "}
+        <span>{children}</span>
+      </motion.span>
     </>
   );
 };
@@ -48,75 +39,94 @@ const About = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-y-52">
-      <section className="w-full ">
-        <div className=" flex flex-col gap-10">
-          <motion.h1
-            initial={{ opacity: 0, x: -500 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              duration: 0.7,
-              ease: "easeOut",
-            }}
-            viewport={{ once: true }}
-            className="text-6xl md:text-8xl lg:text-9xl font-extrabold text-center"
-          >
-            Hi, there! I'm Josh
-          </motion.h1>
-          <motion.h2
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{
-              duration: 1.5,
-            }}
-            viewport={{ once: true }}
-            className="text-xl md:text-3xl lg:text-6xl font-semibold"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam,
-            eos illo vitae provident magnam reiciendis asperiores dolor
-            consequatur? Voluptatibus{" "}
-            <Highlight delay="0.5">zexpedita</Highlight> quaerat aut autem eaque
-            dolorem saepe? Voluptatem aspernatur explicabo magni consequuntur
-            eaque, facilis obcaecati{" "}
-            <Highlight delay="1">perferendis</Highlight> placeat quisquam
-            commodi laboriosam autem quis exercitationem, in vitae quibusdam nam
-            rem repudiandae fugit.
-          </motion.h2>
-        </div>
-        <div className="flex flex-col justify-center text-7xl my-28">
-          <motion.h5
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{
-              duration: 1.5,
-            }}
-            viewport={{ once: true }}
-            className="text-3xl mb-10"
-          >
-            I've built projects using:
-          </motion.h5>
-          <ul className="flex flex-row gap-10 flex-wrap justify-center">
-            {techStackList.map((item, i) => {
-              const { id, icon, label } = item;
-              return (
-                <li
-                  key={id}
-                  ref={(el) => (ref.current[i] = el)}
-                  className="flex flex-col justify-center items-center opacity-0"
+    <div>
+      <div className="flex flex-col gap-y-52 align-elements py-10">
+        <section className=" relative overflow-hidden w-full max-w-full mx-auto">
+          <div className=" flex flex-col gap-10">
+            <motion.h1
+              initial={{ opacity: 0, x: -500 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true }}
+              className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-center"
+            >
+              👋 Hi! I'm Josh
+            </motion.h1>
+            <motion.h2
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                duration: 1.5,
+              }}
+              viewport={{ once: true }}
+              className="text-xl md:text-3xl lg:text-6xl font-semibold "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam,
+              eos illo vitae provident magnam reiciendis asperiores dolor
+              consequatur? Voluptatibus{" "}
+              <Highlight delay="1">zexpedita</Highlight> quaerat aut autem eaque
+              dolorem saepe? Voluptatem aspernatur explicabo magni consequuntur
+              eaque, facilis obcaecati{" "}
+              <Highlight delay="1.5">perferendis</Highlight> placeat quisquam
+              commodi laboriosam autem quis exercitationem, in vitae quibusdam
+              nam rem repudiandae fugit.
+            </motion.h2>
+          </div>
+          <div className="mt-9">
+            <div>
+              <a
+                href="#"
+                className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
+              >
+                <span className="text-2xl">More information</span>
+                <svg
+                  class="w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6 ml-2"
                 >
-                  {icon}
-                  <small className="text-sm">{label}</small>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </section>
-      <section>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-center">
-          My journey
-        </h1>
-      </section>
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center text-5xl lg:text-7xl my-28">
+            <motion.h5
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                duration: 1.5,
+              }}
+              viewport={{ once: true }}
+              className="text-xl lg:text-3xl mb-10"
+            >
+              I've built projects using:
+            </motion.h5>
+            <ul className="flex flex-row gap-10 flex-wrap justify-center">
+              {techStackList.map((item, i) => {
+                const { id, icon, label } = item;
+                return (
+                  <li
+                    key={id}
+                    ref={(el) => (ref.current[i] = el)}
+                    className="flex flex-col justify-center items-center opacity-0"
+                  >
+                    {icon}
+                    <small className="text-sm">{label}</small>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </section>
+      </div>
     </div>
   );
 };

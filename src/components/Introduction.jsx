@@ -5,8 +5,8 @@ const Introduction = () => {
   const text = "Crafting experiences, one line at a time.".split(" ");
   const totalDuration = 1.5 + (text.length - 1) / 5.5;
   return (
-    <div className="flex flex-col h-screen justify-center items-center min-h-screen">
-      <div className="text-center w-11/12 max-w-7xl font-bold text-4xl sm:text-6xl md:text-8xl lg:text-9xl gap-2 text-white">
+    <div className="flex flex-col h-screen justify-center items-center min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-slate-300 to-white">
+      <div className="text-center w-11/12 max-w-7xl font-bold text-4xl sm:text-6xl md:text-8xl lg:text-9xl gap-2">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ const Introduction = () => {
           learn more about me
         </span>
         <span>
-          <TfiArrowCircleDown className="text-5xl lg:text-5xl font-bold text-white" />
+          <TfiArrowCircleDown className="text-5xl lg:text-5xl font-bold hover:text-yellow-500 transition-all 2s easeInOut" />
         </span>
       </motion.a>
     </div>
