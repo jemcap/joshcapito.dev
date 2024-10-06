@@ -34,3 +34,49 @@ export const socialMediaIcons = [
     label: "Github",
   },
 ];
+
+export const projectsList = [
+  {
+    id: 1,
+    title: "Meal Master",
+    type: "Group project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque adipisci earum ut eum nostrum placeat voluptatum, temporibus tempore distinctio officiis nesciunt sint excepturi quisquam rem recusandae nisi. At, delectus quaerat fugiat commodi et, consequuntur placeat quod voluptas nesciunt exercitationem reprehenderit ipsa? Deserunt ex eius eligendi accusantium nisi repudiandae enim! Modi.",
+    stack: [{ id: 1, label: "React" }],
+    github: "",
+    website: "",
+  },
+  {
+    id: 2,
+    title: "Nova Performance — Barbell Club",
+    type: "Freelance project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque adipisci earum ut eum nostrum placeat voluptatum, temporibus tempore distinctio officiis nesciunt sint excepturi quisquam rem recusandae nisi. At, delectus quaerat fugiat commodi et, consequuntur placeat quod voluptas nesciunt exercitationem reprehenderit ipsa? Deserunt ex eius eligendi accusantium nisi repudiandae enim! Modi.",
+    stack: [{ id: 1, label: "React" }],
+    github: "",
+    website: "",
+  },
+  {
+    id: 3,
+    title: "Solace Furniture",
+    type: "Personal project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque adipisci earum ut eum nostrum placeat voluptatum, temporibus tempore distinctio officiis nesciunt sint excepturi quisquam rem recusandae nisi. At, delectus quaerat fugiat commodi et, consequuntur placeat quod voluptas nesciunt exercitationem reprehenderit ipsa? Deserunt ex eius eligendi accusantium nisi repudiandae enim! Modi.",
+    stack: [
+      { id: 1, label: "React" },
+      { id: 2, label: "TailwindCSS" },
+    ],
+    github: "",
+    website: "",
+  },
+  {
+    id: 4,
+    title: "Sprintyper",
+    type: "Personal project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque adipisci earum ut eum nostrum placeat voluptatum, temporibus tempore distinctio officiis nesciunt sint excepturi quisquam rem recusandae nisi. At, delectus quaerat fugiat commodi et, consequuntur placeat quod voluptas nesciunt exercitationem reprehenderit ipsa? Deserunt ex eius eligendi accusantium nisi repudiandae enim! Modi.",
+    stack: [{ id: 1, label: "React" }],
+    github: "",
+    website: "",
+  },
+];

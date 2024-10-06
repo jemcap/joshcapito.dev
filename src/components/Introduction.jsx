@@ -7,19 +7,24 @@ import { useRef, useEffect } from "react";
 const Introduction = () => {
   const socialRef = useRef([]);
 
-  useEffect(() => {
+  const displayIcons = () => {
     socialRef.current.forEach((item, i) => {
       if (item) {
-        item.style.transition = `opacity 1.25s ease ${(i + 1) * 1.5}s`;
+        item.style.transition = `opacity 1.25s ease ${(i + 1) * 0.25}s`;
         item.style.opacity = 1;
       }
     });
+  };
+
+  useEffect(() => {
+    const timeoutId = setTimeout(displayIcons, 3000);
+    return () => clearTimeout(timeoutId);
   }, []);
 
   const text = "Crafting experiences, one line at a time.".split(" ");
   const totalDuration = 1.5 + (text.length - 1) / 5.5;
   return (
-    <div className="flex flex-col h-screen justify-center items-center min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-slate-200 to-white">
+    <div className="flex flex-col h-screen justify-center items-center min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-slate-300 to-white">
       <div className="text-center w-11/12 max-w-7xl font-bold text-4xl sm:text-6xl md:text-8xl lg:text-9xl gap-2">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
