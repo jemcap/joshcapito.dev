@@ -40,11 +40,11 @@ const About = () => {
 
   return (
     <div>
-      <div className="flex flex-col gap-y-52 align-elements py-10">
-        <section className=" relative overflow-hidden w-full max-w-full mx-auto">
+      <div className="flex flex-col gap-y-52 align-elements py-32">
+        <section className=" w-full max-w-full mx-auto">
           <div className=" flex flex-col gap-10">
             <motion.h1
-              initial={{ opacity: 0, x: -500 }}
+              initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
