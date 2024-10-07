@@ -1,5 +1,6 @@
 import React from "react";
 import { projectsList } from "../constants/lists";
+import { GithubIcon } from "../utils/utils";
 
 const Projects = () => {
   return (
@@ -10,14 +11,23 @@ const Projects = () => {
         </div>
         <div className="grid grid-cols-1 gap-8">
           {projectsList.map((project) => {
-            const { id, title, type, description, stack } = project;
+            const {
+              id,
+              title,
+              type,
+              image,
+              description,
+              stack,
+              github,
+              website,
+            } = project;
             return (
               <div key={id} className="card card-side bg-base-100 shadow-xl">
                 <figure className="hidden md:flex md:flex-[0.35]">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                    src={image}
                     alt="Movie"
-                    className="object-cover w-full h-full hidden md:flex"
+                    className="object-cover w-[750px] h-full hidden md:flex"
                   />
                 </figure>
                 <div className="card-body flex-1">
@@ -39,9 +49,41 @@ const Projects = () => {
                   </p>
 
                   <div className="card-actions justify-start">
-                    <div className="flex gap-2">
-                      <a href="">GitHub repository</a>
-                      <a href="">Visit site</a>
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-2 items-center">
+                      <a
+                        href={github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="border-4 py-1 lg:py-2 px-4 lg:px-5 border-black rounded-full w-full sm:w-auto"
+                      >
+                        <div className="flex justify-center items-center text-xs sm:text-sm">
+                          <GithubIcon className="text-lg sm:text-xl" />
+                          <span className="ml-2">GitHub repository</span>
+                        </div>
+                      </a>
+                      <a
+                        href={website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-black py-2 lg:py-3 px-4 lg:px-5 rounded-full text-white w-full sm:w-auto"
+                      >
+                        <div className="flex justify-center items-center text-xs sm:text-sm">
+                          <span className="flex items-center">
+                            Visit site
+                            <svg
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              className="w-4 h-4 ml-2"
+                            >
+                              <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
