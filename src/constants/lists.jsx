@@ -14,6 +14,7 @@ import MealMasterImg from "../assets/meal_master.png";
 import NovaPerformanceSite from "../assets/nova_performance_site.png";
 import SolaceFurnitures from "../assets/solace_furnitures.png";
 import Sprintyper from "../assets/sprintyper.png";
+import Portfolio from "../assets/online_portfolio.png";
 
 export const OriginalWebsiteLink = ({ children }) => {
   return (
@@ -127,6 +128,20 @@ export const projectsList = [
       { id: 1, label: "HTML5" },
       { id: 2, label: "CSS3" },
       { id: 3, label: "JavaScript" },
+    ],
+    github: "https://github.com/jemcap/speed-typer",
+    website: "https://speed-typer-tool.netlify.app/",
+  },
+  {
+    id: 5,
+    title: "Online Portfolio",
+    type: "Personal project",
+    image: Portfolio,
+    description: "This project is exactly the site you're in right now. ",
+    stack: [
+      { id: 1, label: "React" },
+      { id: 2, label: "TailwindCSS" },
+      { id: 3, label: "Framer Motion" },
     ],
     github: "https://github.com/jemcap/speed-typer",
     website: "https://speed-typer-tool.netlify.app/",

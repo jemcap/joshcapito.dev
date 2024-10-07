@@ -9,7 +9,7 @@ const Projects = () => {
         <div className="text-center text-3xl font-bold">
           <h1>Featured Projects</h1>
         </div>
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 gap-12">
           {projectsList.map((project) => {
             const {
               id,
