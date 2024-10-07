@@ -1,14 +1,18 @@
-import React from "react";
+import { useRef } from "react";
 import Introduction from "../components/Introduction";
 import About from "../components/About";
 import Projects from "../components/Projects";
+import { useGlobalContext } from "../context/context";
 
 const Landing = () => {
+  const { projectsRef } = useGlobalContext();
   return (
     <>
       <Introduction />
       <About />
-      <Projects />
+      <div ref={projectsRef}>
+        <Projects />
+      </div>
     </>
   );
 };

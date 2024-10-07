@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Landing from "./pages/Landing";
 import Contact from "./pages/Contact";
 import Work from "./pages/Work";
+import { AppProvider } from "./context/context";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <AppProvider>
+        <RouterProvider router={router} />
+      </AppProvider>
     </>
   );
 }

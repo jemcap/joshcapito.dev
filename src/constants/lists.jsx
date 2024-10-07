@@ -82,7 +82,7 @@ export const projectsList = [
         Nova Performance, an independent gym business, barbell club, and a
         respected strength sports facility. This freelance project allowed me to
         work with the gym owner to redesign and redevelop the website into a
-        full-stack application. You can see the original site{" "}
+        full-stack application. You can view the original site{" "}
         <OriginalWebsiteLink>here</OriginalWebsiteLink>. The site is fast,
         responsive, and visually appealing, enhancing user engagement and
         showcasing the gym's services.{" "}

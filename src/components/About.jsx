@@ -64,15 +64,18 @@ const About = () => {
               viewport={{ once: true }}
               className="text-xl md:text-3xl lg:text-6xl font-semibold "
             >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam,
-              eos illo vitae provident magnam reiciendis asperiores dolor
-              consequatur? Voluptatibus{" "}
-              <Highlight delay="1">zexpedita</Highlight> quaerat aut autem eaque
-              dolorem saepe? Voluptatem aspernatur explicabo magni consequuntur
-              eaque, facilis obcaecati{" "}
-              <Highlight delay="1.5">perferendis</Highlight> placeat quisquam
-              commodi laboriosam autem quis exercitationem, in vitae quibusdam
-              nam rem repudiandae fugit.
+              Based in Cambridge, UK, I'm a{" "}
+              <Highlight delay="1">Junior Frontend Web Developer</Highlight>{" "}
+              with a background in Product Design. My{" "}
+              <Highlight delay="2">passion for digital design</Highlight> fuels
+              my creativity and inspires me to create innovative coding
+              solutions and{" "}
+              <Highlight delay="3">tackle challenges with creativity</Highlight>{" "}
+              that enhance user experiences. I enjoy taking ideas from
+              conception to production, transforming concepts into visually
+              appealing and functional interfaces and{" "}
+              <Highlight delay="4">creating narratives</Highlight> for the
+              public through digital arts.
             </motion.h2>
           </div>
           <div className="mt-9">
