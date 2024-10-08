@@ -4,7 +4,7 @@ import { useGlobalContext } from "../context/context";
 import CVPdf from "../assets/CV_Frontend_Developer_CAPITO_JOSHUA.pdf";
 
 const Navlinks = () => {
-  const { scrollToProjects } = useGlobalContext();
+  const { scrollToProjects, scrollToContact } = useGlobalContext();
   return (
     <>
       {NAV_LINKS.map((link) => {
@@ -15,6 +15,14 @@ const Navlinks = () => {
               <button
                 type="button"
                 onClick={scrollToProjects}
+                className="hover:underline"
+              >
+                {label}
+              </button>
+            ) : label === "contact" ? (
+              <button
+                type="button"
+                onClick={scrollToContact}
                 className="hover:underline"
               >
                 {label}

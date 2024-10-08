@@ -147,3 +147,23 @@ export const projectsList = [
     website: "https://speed-typer-tool.netlify.app/",
   },
 ];
+
+export const daysOfWeek = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
+export const contactLinks = [
+  { id: 1, url: "mailto:joshuaecapito22@gmail.com", label: "Email" },
+  {
+    id: 2,
+    url: "https://www.linkedin.com/in/joshuaecapito/",
+    label: "LinkedIn",
+  },
+  { id: 3, url: "https://github.com/jemcap", label: "GitHub" },
+];
