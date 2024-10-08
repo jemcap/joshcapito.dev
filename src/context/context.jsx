@@ -5,6 +5,7 @@ const AppContext = createContext();
 export const AppProvider = ({ children }) => {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const aboutRef = useRef(null);
 
   const scrollToProjects = () => {
     if (projectsRef.current) {
@@ -17,9 +18,21 @@ export const AppProvider = ({ children }) => {
       contactRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const scrollToAbout = () => {
+    if (aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <AppContext.Provider
-      value={{ scrollToProjects, scrollToContact, projectsRef, contactRef }}
+      value={{
+        scrollToProjects,
+        scrollToContact,
+        scrollToAbout,
+        aboutRef,
+        projectsRef,
+        contactRef,
+      }}
     >
       {children}
     </AppContext.Provider>

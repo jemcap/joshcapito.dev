@@ -6,11 +6,13 @@ import { useGlobalContext } from "../context/context";
 import Contact from "../components/Contact";
 
 const Landing = () => {
-  const { projectsRef, contactRef } = useGlobalContext();
+  const { projectsRef, contactRef, aboutRef } = useGlobalContext();
   return (
     <>
       <Introduction />
-      <About />
+      <div ref={aboutRef}>
+        <About />
+      </div>
       <div ref={projectsRef}>
         <Projects />
       </div>

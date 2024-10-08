@@ -3,8 +3,10 @@ import { TfiArrowCircleDown } from "react-icons/tfi";
 import jcapImg from "../assets/capito_j_portrait.png";
 import { socialMediaIcons } from "../constants/lists";
 import { useRef, useEffect } from "react";
+import { useGlobalContext } from "../context/context";
 
 const Introduction = () => {
+  const { scrollToAbout } = useGlobalContext();
   const socialRef = useRef([]);
 
   const displayIcons = () => {
@@ -86,11 +88,11 @@ const Introduction = () => {
         transition={{ duration: 1, delay: totalDuration }}
         className="mt-32 flex flex-col justify-center items-center gap-2"
       >
-        <span className="font-light text-sm lg:text-xl">
-          learn more about me
-        </span>
+        <span className="font-light text-sm lg:text-xl">who am I?</span>
         <span>
-          <TfiArrowCircleDown className="text-5xl lg:text-5xl font-bold hover:text-yellow-500 transition-all 2s easeInOut" />
+          <button type="button" onClick={scrollToAbout}>
+            <TfiArrowCircleDown className="text-5xl lg:text-5xl font-bold hover:text-yellow-500 transition-all 2s easeInOut" />
+          </button>
         </span>
       </motion.a>
     </div>
