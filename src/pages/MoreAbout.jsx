@@ -2,7 +2,7 @@ import MoreAboutMe from "../components/MoreAboutMe";
 
 const MoreAbout = () => {
   return (
-    <div className="h-screen">
+    <div>
       <MoreAboutMe />
     </div>
   );

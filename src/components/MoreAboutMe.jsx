@@ -2,7 +2,7 @@ import Timeline from "./Timeline";
 
 const MoreAboutMe = () => {
   return (
-    <div className="h-screen py-10">
+    <div className="py-10">
       <div className="flex flex-col gap-10 align-elements my-32 text-start">
         <h1 className="text-4xl font-bold text-start ">
           joshua emmanuel capito
