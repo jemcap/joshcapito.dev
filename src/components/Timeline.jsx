@@ -230,10 +230,11 @@ const Timeline = () => {
           <div className="text-lg font-black">Junior DevOps Engineer</div>
           <div className="text-sm font-black">dcloud9 ltd.</div>
           At the same time, I stepped out of my comfort zone and had the
-          incredible opportunity to learn CI/CD and automation as a Junior
-          DevOps Engineer with dcloud9 Ltd. What excited me most about this role
-          was the chance to explore and utilise AWS services while contributing
-          to the development of an eConsent application.
+          incredible opportunity to learn building APIs with Python, and
+          Automation with Terraform, as a Junior DevOps Engineer with dcloud9
+          Ltd. What excited me most about this role was the chance to explore
+          and utilise AWS services while contributing to the development of an
+          eConsent application.
         </div>
         <hr />
       </motion.li>
