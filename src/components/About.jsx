@@ -81,7 +81,7 @@ const About = () => {
           <div className="mt-9">
             <div>
               <a
-                href="#"
+                href="/information"
                 className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
               >
                 <span className="text-2xl">More information</span>

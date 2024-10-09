@@ -41,7 +41,7 @@ const Navlinks = () => {
         className="text-center border-4 p-1 rounded-lg border-orange-500 text-orange-700 hover:bg-orange-500 hover:text-white transition-colors 2s ease"
         download={true}
       >
-        Download CV
+        My CV
       </a>
     </>
   );

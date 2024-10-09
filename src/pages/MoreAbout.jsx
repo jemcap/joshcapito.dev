@@ -1,7 +1,11 @@
-import React from "react";
+import MoreAboutMe from "../components/MoreAboutMe";
 
 const MoreAbout = () => {
-  return <div>MoreAbout</div>;
+  return (
+    <div className="h-screen">
+      <MoreAboutMe />
+    </div>
+  );
 };
 
 export default MoreAbout;

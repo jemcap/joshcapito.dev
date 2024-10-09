@@ -25,8 +25,9 @@ const Contact = () => {
     <div className="h-full py-10 bg-black text-white">
       <div className="flex flex-col gap-10 align-elements ">
         <h1 className="text-2xl font-bold">
-          Thank you for your time and consideration! Enjoy the rest of your
-          {` ${getDayOfWeek().toLowerCase()} ${hours}`}.
+          Thank you for your time and consideration! I hope you enjoy the rest
+          of your
+          {` ${getDayOfWeek().toLowerCase()} ${hours}!`}
         </h1>
 
         <h1 className="text-center text-3xl font-bold">Get in touch!</h1>

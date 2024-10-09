@@ -26,13 +26,12 @@ const Introduction = () => {
   const text = "Crafting experiences, one line at a time.".split(" ");
   const totalDuration = 1.5 + (text.length - 1) / 5.5;
   return (
-    <div className="flex flex-col h-screen justify-center items-center min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-slate-300 to-white">
-      <div className="text-center w-11/12 max-w-7xl font-bold text-4xl sm:text-6xl md:text-8xl lg:text-9xl gap-2">
+    <div className="flex flex-col h-full justify-center items-center min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-slate-300 to-white">
+      <div className="text-center w-11/12 max-w-7xl font-bold text-4xl sm:text-6xl md:text-8xl lg:text-9xl gap-2 ">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: totalDuration }}
-          className="mb-4"
         >
           <div className="flex flex-col font-light justify-center items-center">
             <div className="flex flex-col items-center lg:flex-row gap-6">
@@ -86,7 +85,7 @@ const Introduction = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: totalDuration }}
-        className="mt-32 flex flex-col justify-center items-center gap-2"
+        className=" flex flex-col justify-center items-center gap-2 mt-20"
       >
         <span className="font-light text-sm lg:text-xl">who am I?</span>
         <span>
