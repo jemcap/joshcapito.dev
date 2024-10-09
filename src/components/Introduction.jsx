@@ -74,7 +74,9 @@ const Introduction = () => {
                 ref={(el) => (socialRef.current[i] = el)}
                 className="flex flex-col justify-center items-center opacity-0"
               >
-                <a href={url}>{icon}</a>
+                <a href={url} rel="noopener noreferrer" target="_blank">
+                  {icon}
+                </a>
               </li>
             );
           })}

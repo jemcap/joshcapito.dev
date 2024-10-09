@@ -137,14 +137,15 @@ export const projectsList = [
     title: "Online Portfolio",
     type: "Personal project",
     image: Portfolio,
-    description: "This project is exactly the site you're in right now. ",
+    description:
+      "This project is exactly the site you're on right now! It's a showcase of my work and skills as a frontend developer thus far. The portfolio highlights various projects I've completed, each demonstrating my skills to create visually appealing and functional web applications.",
     stack: [
       { id: 1, label: "React" },
       { id: 2, label: "TailwindCSS" },
       { id: 3, label: "Framer Motion" },
     ],
-    github: "https://github.com/jemcap/speed-typer",
-    website: "https://speed-typer-tool.netlify.app/",
+    github: "https://github.com/jemcap/projects-portfolio",
+    website: "#",
   },
 ];
 
