@@ -74,7 +74,7 @@ const Introduction = () => {
               <li
                 key={id}
                 ref={(el) => (socialRef.current[i] = el)}
-                className="flex flex-col justify-center items-center opacity-0 hover:text-yellow-500 text-4xl lg:text-5xl "
+                className="flex flex-col justify-center items-center opacity-0 hover:text-yellow-500 text-4xl "
               >
                 <a href={url} rel="noopener noreferrer" target="_blank">
                   {icon}

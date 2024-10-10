@@ -63,7 +63,7 @@ const About = () => {
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className="text-xl md:text-3xl lg:text-6xl font-semibold "
+              className="text-xl md:text-3xl lg:text-5xl  "
             >
               Based in Cambridge, UK, I'm a{" "}
               <Highlight delay="1">Junior Frontend Web Developer</Highlight>{" "}
