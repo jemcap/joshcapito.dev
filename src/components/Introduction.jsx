@@ -61,7 +61,7 @@ const Introduction = () => {
                 duration: 0.5,
                 delay: i / 3,
               }}
-              className="font-extrabold max-md:text-4xl"
+              className="font-extrabold text-5xl md:text-7xl lg:text-8xl"
             >
               {el}{" "}
             </motion.span>
