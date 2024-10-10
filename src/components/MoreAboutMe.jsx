@@ -22,10 +22,10 @@ const MoreAboutMe = () => {
           </p>
 
           <p>
-            When I'm not working on a project, I'm likely experimenting with
-            other creative passions like cinematography, photography, and
-            exploring Three.js. Otherwise, you'll find me at the gym (I'm a
-            powerlifter).
+            When I'm not working on a project, I'm probably playing around with
+            my other creative passions like cinematography, photography, and
+            playing the piano/guitar. Otherwise, you'll find me at the gym (I'm
+            a powerlifter).
           </p>
         </div>
         <div className="flex text-start gap-8 text-2xl font-bold">
