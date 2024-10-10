@@ -39,7 +39,7 @@ const Projects = () => {
                       {type}
                     </small>
                   </div>
-                  <p className="text-start max-md:text-2xl">{description}</p>
+                  <p className="text-start max-md:text-lg">{description}</p>
                   <p className="text-start">
                     <ul className="flex gap-2 flex-wrap">
                       {stack.map((item) => (
