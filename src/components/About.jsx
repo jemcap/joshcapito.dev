@@ -56,10 +56,11 @@ const About = () => {
               👋 Hi! I'm Josh
             </motion.h1>
             <motion.h2
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
-                duration: 1.5,
+                duration: 0.7,
+                ease: "easeOut",
               }}
               viewport={{ once: true }}
               className="text-xl md:text-3xl lg:text-6xl font-semibold "
@@ -67,14 +68,14 @@ const About = () => {
               Based in Cambridge, UK, I'm a{" "}
               <Highlight delay="1">Junior Frontend Web Developer</Highlight>{" "}
               with a background in Product Design. My{" "}
-              <Highlight delay="2">passion for digital design</Highlight> fuels
-              my creativity and inspires me to create innovative coding
+              <Highlight delay="1.5">passion for digital design</Highlight>{" "}
+              fuels my creativity and inspires me to create innovative coding
               solutions and{" "}
-              <Highlight delay="3">tackle challenges with creativity</Highlight>{" "}
+              <Highlight delay="2">tackle challenges with creativity</Highlight>{" "}
               that enhance user experiences. I enjoy taking ideas from
               conception to production, transforming concepts into visually
               appealing and functional interfaces and{" "}
-              <Highlight delay="4">creating narratives</Highlight> for the
+              <Highlight delay="2.5">creating narratives</Highlight> for the
               public through digital arts.
             </motion.h2>
           </div>

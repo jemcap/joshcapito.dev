@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TfiArrowCircleDown } from "react-icons/tfi";
+import { HiArrowLongDown } from "react-icons/hi2";
 import jcapImg from "../assets/capito_j_portrait.png";
 import { socialMediaIcons } from "../constants/lists";
 import { useRef, useEffect } from "react";
@@ -27,7 +27,7 @@ const Introduction = () => {
   const totalDuration = 1.5 + (text.length - 1) / 5.5;
   return (
     <div className="flex flex-col h-full justify-center items-center min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-slate-300 to-white">
-      <div className="text-center w-11/12 max-w-7xl font-bold text-4xl sm:text-6xl md:text-8xl lg:text-9xl gap-2 ">
+      <div className="text-center w-11/12 max-w-7xl font-bold text-4xl sm:text-6xl md:text-8xl lg:text-9xl gap-2 mt-44">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,8 +41,10 @@ const Introduction = () => {
                 className="rounded-full w-10 lg:w-14 lg:h-14"
               />
               <div className="flex flex-col text-center lg:text-start">
-                <span className="text-xs lg:text-xl">portfolio curated by</span>
-                <span className="text-sm lg:text-3xl text-start">
+                <span className="text-sm md:text-lg lg:text-xl">
+                  portfolio curated by
+                </span>
+                <span className="text-sm md:text-lg lg:text-3xl text-start">
                   joshua emmanuel capito
                 </span>
               </div>
@@ -59,7 +61,7 @@ const Introduction = () => {
                 duration: 0.5,
                 delay: i / 3,
               }}
-              className="font-extrabold"
+              className="font-extrabold max-md:text-4xl"
             >
               {el}{" "}
             </motion.span>
@@ -72,7 +74,7 @@ const Introduction = () => {
               <li
                 key={id}
                 ref={(el) => (socialRef.current[i] = el)}
-                className="flex flex-col justify-center items-center opacity-0"
+                className="flex flex-col justify-center items-center opacity-0 hover:text-yellow-500 text-4xl lg:text-5xl "
               >
                 <a href={url} rel="noopener noreferrer" target="_blank">
                   {icon}
@@ -87,12 +89,11 @@ const Introduction = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: totalDuration }}
-        className=" flex flex-col justify-center items-center gap-2 mt-20"
+        className=" flex flex-col justify-center items-center gap-2 mt-12"
       >
-        <span className="font-light text-sm lg:text-xl">who am I?</span>
         <span>
           <button type="button" onClick={scrollToAbout}>
-            <TfiArrowCircleDown className="text-5xl lg:text-5xl font-bold hover:text-yellow-500 transition-all 2s easeInOut" />
+            <HiArrowLongDown className="text-5xl lg:text-5xl font-bold hover:text-yellow-500 transition-all 2s easeInOut" />
           </button>
         </span>
       </motion.a>

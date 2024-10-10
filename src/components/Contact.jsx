@@ -23,15 +23,15 @@ const Contact = () => {
 
   return (
     <div className="h-full py-10 bg-black text-white">
-      <div className="flex flex-col gap-10 align-elements ">
-        <h1 className="text-2xl font-bold">
+      <div className="flex flex-col gap-10 align-elements">
+        <h1 className="text-xl font-bold">
           Thank you for your time and consideration! I hope you enjoy the rest
           of your
-          {` ${getDayOfWeek().toLowerCase()} ${hours}!`}
+          {` ${getDayOfWeek()} ${hours}!`}
         </h1>
 
-        <h1 className="text-center text-3xl font-bold">Get in touch!</h1>
-        <div className="flex justify-center items-center gap-8 text-2xl">
+        <h1 className="text-center text-2xl font-bold">Get in touch!</h1>
+        <div className="flex justify-center items-center gap-8 text-xl">
           {contactLinks.map((item) => {
             const { id, url, label } = item;
             return (
