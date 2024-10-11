@@ -68,8 +68,8 @@ const About = () => {
               Based in Cambridge, UK, I'm a{" "}
               <Highlight delay="1">Junior Frontend Web Developer</Highlight>{" "}
               with a background in Product Design. My{" "}
-              <Highlight delay="1.5">passion for digital design</Highlight>{" "}
-              fuels my creativity and inspires me to create innovative coding
+              <Highlight delay="1.5">passion for UX/UI design</Highlight> fuels
+              my creativity and inspires me to create innovative coding
               solutions and{" "}
               <Highlight delay="2">tackle challenges with creativity</Highlight>{" "}
               that enhance user experiences. I enjoy taking ideas from
