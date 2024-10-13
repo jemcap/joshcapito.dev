@@ -45,7 +45,7 @@ const Timeline = () => {
           </div>
           It was lockdown. Nothing else to do (or can do), so I tried out
           designing websites. One thing lead to another, and out of curiousity,
-          I ended up building extremely simple sites with just HTML and CSS. I
+          I ended up building several simple sites with just HTML and CSS. I
           found it extremely fun and rewarding, which sparked my interest in web
           development.
         </div>
@@ -118,11 +118,12 @@ const Timeline = () => {
           <div className="text-lg font-black">Web Designer and Developer</div>
           <div className="text-sm font-black">Unitemps</div>
           My first paid role as a Web Designer and Developer! I worked with the
-          website team to design and build a platform to showcase the Masters of
-          Product Design student work to the public. This project allowed me to
-          combine my design skills with my technical knowledge. It was a
-          rewarding opportunity to contribute to their success while further
-          developing my skills in web design and development.
+          Masters of Product Design website team at NTU to design and build a
+          platform to showcase the Masters of Product Design student work to the
+          public. This project allowed me to combine my design skills with my
+          technical knowledge. It was a rewarding opportunity to contribute to
+          their success while further developing my skills in web design and
+          development.
         </div>
         <hr />
       </motion.li>
@@ -186,11 +187,10 @@ const Timeline = () => {
           </svg>
         </div>
         <div className="timeline-start mb-10 md:text-end">
-          <div className="text-lg font-black">GRADUATED🍾</div>
-          After four years of hard work and dedication. I finally graduated! At
-          that point, At that point, I felt ready to dive into the world of
-          frontend development. Immediately after graduation, I decided to
-          enroll in a{" "}
+          <div className="text-lg font-bold">🍾GRADUATED</div>
+          After four years of hard work and dedication, I graduated! At that
+          point, I felt ready to dive into the world of frontend development.
+          Immediately after graduation, I decided to enroll in a{" "}
           <span className="italic font-bold">
             16-week Bootcamp in Front-End Web Development
           </span>{" "}

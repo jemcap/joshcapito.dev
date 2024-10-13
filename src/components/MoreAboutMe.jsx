@@ -24,8 +24,12 @@ const MoreAboutMe = () => {
           <p>
             When I'm not working on a project, I'm probably playing around with
             my other creative passions like cinematography, photography, and
-            playing the piano/guitar. Otherwise, you'll find me at the gym (I'm
-            a powerlifter).
+            playing the piano/guitar. Otherwise, you'll find me at the gym or on
+            a run!.
+          </p>
+          <p>
+            I'm also trying to read more, so for all you book worms out there;
+            hit me up!
           </p>
         </div>
         <div className="flex text-start gap-8 text-2xl font-bold">
