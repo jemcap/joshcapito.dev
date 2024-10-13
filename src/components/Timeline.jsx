@@ -79,17 +79,14 @@ const Timeline = () => {
             Professional Industry Programme — NTU Design Industries cohort of
             2021
           </div>
-          This year was my placement year, but due to the peak of COVID-19,
-          finding a placement role was nearly impossible. Nottingham Trent
-          University launched the{" "}
+          During my placement year, COVID-19 made finding a role difficult, so
+          Nottingham Trent University introduced the{" "}
           <span className="italic font-bold">
             Professional Industry Programme
-          </span>{" "}
-          as an alternative for students. I joined a project where several small
-          teams collaborated on a larger initiative. I had the opportunity to
-          join the year's Website team where I contributed to user interface
-          design. This project was my first opportunity to apply and develop my
-          UX/UI skills in a practical team setting.
+          </span>
+          . I joined the website team, contributing to UI design as part of a
+          larger collaborative project. This was my first chance to apply and
+          grow my UX/UI skills in a practical team environment.
         </div>
         <hr />
       </motion.li>
@@ -187,7 +184,9 @@ const Timeline = () => {
           </svg>
         </div>
         <div className="timeline-start mb-10 md:text-end">
-          <div className="text-lg font-bold">🍾GRADUATED</div>
+          <div className="text-lg font-bold">
+            🍾GRADUATED FROM NTU (BSc Product Design)
+          </div>
           After four years of hard work and dedication, I graduated! At that
           point, I felt ready to dive into the world of frontend development.
           Immediately after graduation, I decided to enroll in a{" "}
