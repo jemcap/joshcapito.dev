@@ -38,7 +38,7 @@ const Navlinks = () => {
 
       <a
         href={CVPdf}
-        className="text-center border-4 p-1 rounded-lg border-orange-500 text-orange-700 hover:bg-orange-500 hover:text-white transition-colors 2s ease"
+        className="text-center font-bold p-1 rounded-lg text-orange-700 hover:bg-orange-500 hover:text-white transition-colors 2s ease"
         download={true}
       >
         My CV
