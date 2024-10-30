@@ -35,14 +35,6 @@ const Navlinks = () => {
           </li>
         );
       })}
-
-      <a
-        href={CVPdf}
-        className="text-center font-bold p-1 rounded-lg text-orange-700 hover:bg-orange-500 hover:text-white transition-colors 2s ease"
-        download={true}
-      >
-        My CV
-      </a>
     </>
   );
 };
