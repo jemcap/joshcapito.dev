@@ -14,6 +14,7 @@ import MealMasterImg from "../assets/meal_master.png";
 import NovaPerformanceSite from "../assets/nova_performance_site.png";
 import SolaceFurnitures from "../assets/solace_furnitures.png";
 import Sprintyper from "../assets/sprintyper.png";
+import BlockBuster from "../assets/blockbuster.png";
 import Portfolio from "../assets/online_portfolio.png";
 
 export const OriginalWebsiteLink = ({ children }) => {
@@ -120,7 +121,7 @@ export const projectsList = [
   {
     id: 4,
     title: "Sprintyper",
-    type: "Personal project",
+    type: "Game Project",
     image: Sprintyper,
     description:
       "Sprintyper is an innovative and engaging tool designed to help individuals improve their typing skills through practice and game-based learning. The platform features four distinct levels, each progressively increasing in complexity, challenging users to accurately type out phrases and sentences appropriate to their skill level.",
@@ -134,6 +135,21 @@ export const projectsList = [
   },
   {
     id: 5,
+    title: "Block Buster",
+    type: "Game Project",
+    image: BlockBuster,
+    description:
+      "Block Buster is an engaging memory game designed to challenge and enhance players' cognitive skills. In this fast-paced game, players must memorise the positions of blocks that light up on the screen. As players progress through the levels, the number of blocks increases, increasing the challenge and keeping the gameplay exciting.",
+    stack: [
+      { id: 1, label: "HTML5" },
+      { id: 2, label: "CSS3" },
+      { id: 3, label: "JavaScript" },
+    ],
+    github: "https://github.com/jemcap/block-buster",
+    website: "https://blockbustergame.netlify.app/",
+  },
+  {
+    id: 6,
     title: "Online Portfolio",
     type: "Personal project",
     image: Portfolio,
