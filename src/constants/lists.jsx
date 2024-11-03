@@ -176,11 +176,10 @@ export const daysOfWeek = [
 ];
 
 export const contactLinks = [
-  { id: 1, url: "mailto:joshuaecapito22@gmail.com", label: "Email" },
   {
-    id: 2,
+    id: 1,
     url: "https://www.linkedin.com/in/joshuaecapito/",
-    label: "LinkedIn",
+    label: "Connect with me",
   },
-  { id: 3, url: "https://github.com/jemcap", label: "GitHub" },
+  { id: 2, url: "https://github.com/jemcap", label: "Let's collaborate" },
 ];
