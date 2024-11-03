@@ -1,7 +1,6 @@
 import React from "react";
 import { daysOfWeek } from "../constants/lists";
 import { contactLinks } from "../constants/lists";
-import ContactModal from "./ContactModal";
 
 const Contact = () => {
   const now = new Date();
@@ -19,7 +18,8 @@ const Contact = () => {
     return daysOfWeek[now.getDay()];
   };
 
-  const hoverStyles = "hover:text-yellow-500 transition-all 2s ease";
+  const hoverStyles =
+    "hover:font-bold hover:text-yellow-500 transition-all 2s ease";
 
   return (
     <div className="h-full py-10 bg-black text-white">
@@ -32,7 +32,6 @@ const Contact = () => {
 
         <h1 className="text-center text-2xl font-bold">Get in touch!</h1>
         <div className="flex justify-center items-center gap-8 text-xl">
-          <ContactModal />
           {contactLinks.map((item) => {
             const { id, url, label } = item;
             return (
