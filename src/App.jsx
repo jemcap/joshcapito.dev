@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Landing from "./pages/Landing";
 import Work from "./pages/Work";
 import { AppProvider } from "./context/context";
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,7 @@ function App() {
     <>
       <AppProvider>
         <RouterProvider router={router} />
+        <ToastContainer />
       </AppProvider>
     </>
   );

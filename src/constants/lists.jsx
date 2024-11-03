@@ -16,6 +16,7 @@ import SolaceFurnitures from "../assets/solace_furnitures.png";
 import Sprintyper from "../assets/sprintyper.png";
 import BlockBuster from "../assets/blockbuster.png";
 import Portfolio from "../assets/online_portfolio.png";
+import ContactModal from "../components/ContactModal";
 
 export const OriginalWebsiteLink = ({ children }) => {
   return (
@@ -176,11 +177,10 @@ export const daysOfWeek = [
 ];
 
 export const contactLinks = [
-  { id: 1, url: "mailto:joshuaecapito22@gmail.com", label: "Email" },
   {
-    id: 2,
+    id: 1,
     url: "https://www.linkedin.com/in/joshuaecapito/",
-    label: "LinkedIn",
+    label: "Connect with me",
   },
-  { id: 3, url: "https://github.com/jemcap", label: "GitHub" },
+  { id: 2, url: "https://github.com/jemcap", label: "Let's collaborate" },
 ];
