@@ -95,7 +95,7 @@ export const projectsList = [
       { id: 3, label: "TailwindCSS" },
       { id: 4, label: "Framer Motion" },
       { id: 5, label: "Stripe API" },
-      { id: 6, label: "EmailJS SDK" },
+      { id: 6, label: "EmailJS" },
     ],
     github: "https://github.com/jemcap/novaperformance-website",
     website: "https://novaperformance.vercel.app/",
@@ -139,7 +139,7 @@ export const projectsList = [
     type: "Game Project",
     image: BlockBuster,
     description:
-      "Block Buster is an engaging memory game designed to challenge and enhance players' cognitive skills. In this fast-paced game, players must memorise the positions of blocks that light up on the screen. As players progress through the levels, the number of blocks increases, increasing the challenge and keeping the gameplay exciting.",
+      "Block Buster is a simple but engaging memory game designed to challenge and enhance players' cognitive skills. In this fast-paced game, players must memorise the positions of blocks that light up on the screen. As players progress through the levels, the number of blocks increases, increasing the challenge and keeping the gameplay exciting.",
     stack: [
       { id: 1, label: "HTML5" },
       { id: 2, label: "CSS3" },
@@ -159,6 +159,7 @@ export const projectsList = [
       { id: 1, label: "React" },
       { id: 2, label: "TailwindCSS" },
       { id: 3, label: "Framer Motion" },
+      { id: 4, label: "EmailJS" },
     ],
     github: "https://github.com/jemcap/projects-portfolio",
     website: "#",
@@ -176,11 +177,10 @@ export const daysOfWeek = [
 ];
 
 export const contactLinks = [
-  { id: 1, url: "mailto:joshuaecapito22@gmail.com", label: "Email" },
   {
-    id: 2,
+    id: 1,
     url: "https://www.linkedin.com/in/joshuaecapito/",
-    label: "LinkedIn",
+    label: "Connect with me",
   },
-  { id: 3, url: "https://github.com/jemcap", label: "GitHub" },
+  { id: 2, url: "https://github.com/jemcap", label: "Let's collaborate" },
 ];
