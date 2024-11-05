@@ -76,12 +76,12 @@ export const projectsList = [
   {
     id: 2,
     title: "Nova Performance — Barbell Club",
-    type: "Freelance project",
+    type: "Volunteer project",
     image: NovaPerformanceSite,
     description: (
       <>
         Nova Performance, an independent gym business, barbell club, and a
-        respected strength sports facility. This freelance project allowed me to
+        respected strength sports facility. This volunteer project allowed me to
         work with the gym owner to redesign and redevelop the website into a
         full-stack application. You can view the original site{" "}
         <OriginalWebsiteLink>here</OriginalWebsiteLink>. The site is fast,
@@ -121,7 +121,7 @@ export const projectsList = [
   {
     id: 4,
     title: "Sprintyper",
-    type: "Game Project",
+    type: "Game project",
     image: Sprintyper,
     description:
       "Sprintyper is an innovative and engaging tool designed to help individuals improve their typing skills through practice and game-based learning. The platform features four distinct levels, each progressively increasing in complexity, challenging users to accurately type out phrases and sentences appropriate to their skill level.",
@@ -136,7 +136,7 @@ export const projectsList = [
   {
     id: 5,
     title: "Block Buster",
-    type: "Game Project",
+    type: "Game project",
     image: BlockBuster,
     description:
       "Block Buster is a simple but engaging memory game designed to challenge and enhance players' cognitive skills. In this fast-paced game, players must memorise the positions of blocks that light up on the screen. As players progress through the levels, the number of blocks increases, increasing the challenge and keeping the gameplay exciting.",
