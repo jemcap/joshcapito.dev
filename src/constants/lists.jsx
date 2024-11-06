@@ -144,6 +144,7 @@ export const projectsList = [
       { id: 1, label: "HTML5" },
       { id: 2, label: "CSS3" },
       { id: 3, label: "JavaScript" },
+      { id: 4, label: "Firebase" },
     ],
     github: "https://github.com/jemcap/block-buster",
     website: "https://blockbustergame.netlify.app/",
