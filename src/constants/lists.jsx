@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 import {
   HtmlIcon,
   CssIcon,
@@ -57,7 +59,7 @@ export const socialMediaIcons = [
 
 export const projectsList = [
   {
-    id: 1,
+    id: uuidv4(),
     title: "Meal Master",
     type: "Group project",
     image: MealMasterImg,
@@ -74,7 +76,7 @@ export const projectsList = [
     website: "https://mealmasterhelper.netlify.app/",
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: "Nova Performance — Barbell Club",
     type: "Volunteer project",
     image: NovaPerformanceSite,
@@ -101,7 +103,7 @@ export const projectsList = [
     website: "https://novaperformance.vercel.app/",
   },
   {
-    id: 3,
+    id: uuidv4(),
     title: "Solace Furnitures",
     type: "Personal project",
     image: SolaceFurnitures,
@@ -119,7 +121,7 @@ export const projectsList = [
     website: "https://solacefurnitures.netlify.app/",
   },
   {
-    id: 4,
+    id: uuidv4(),
     title: "Sprintyper",
     type: "Game project",
     image: Sprintyper,
@@ -134,7 +136,7 @@ export const projectsList = [
     website: "https://speed-typer-tool.netlify.app/",
   },
   {
-    id: 5,
+    id: uuidv4(),
     title: "Block Buster",
     type: "Game project",
     image: BlockBuster,
@@ -150,7 +152,7 @@ export const projectsList = [
     website: "https://blockbustergame.netlify.app/",
   },
   {
-    id: 6,
+    id: uuidv4(),
     title: "Online Portfolio",
     type: "Personal project",
     image: Portfolio,

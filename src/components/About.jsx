@@ -85,7 +85,12 @@ const About = () => {
                 href="/information"
                 className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
               >
-                <span className="text-2xl" aria-label="Learn more about me button">Learn more about me</span>
+                <span
+                  className="text-2xl"
+                  aria-label="Learn more about me button"
+                >
+                  Learn more about me
+                </span>
                 <svg
                   class="w-4"
                   fill="none"

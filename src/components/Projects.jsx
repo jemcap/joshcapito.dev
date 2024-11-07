@@ -26,7 +26,7 @@ const Projects = () => {
                 <figure className="hidden md:flex md:flex-[0.35]">
                   <img
                     src={image}
-                    alt="Movie"
+                    alt={title}
                     className="object-cover w-[750px] h-full hidden md:flex"
                   />
                 </figure>
@@ -42,11 +42,17 @@ const Projects = () => {
                   <p className="text-start max-md:text-lg">{description}</p>
                   <p className="text-start">
                     <ul className="flex gap-2 flex-wrap">
-                      {stack.map((item) => (
-                        <li className="border-4 border-pink-200 border-b-pink-500 flex items-center p-1 rounded-xl">
-                          {item.label}
-                        </li>
-                      ))}
+                      {stack.map((item) => {
+                        const { id, label } = item;
+                        return (
+                          <li
+                            key={id}
+                            className="border-4 border-pink-200 border-b-pink-500 flex items-center p-1 rounded-xl"
+                          >
+                            {label}
+                          </li>
+                        );
+                      })}
                     </ul>
                   </p>
 
