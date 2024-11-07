@@ -39,7 +39,7 @@ const About = () => {
   }, []);
 
   return (
-    <div>
+    <main>
       <div className="flex flex-col gap-y-52 align-elements py-32">
         <section className=" w-full max-w-full mx-auto">
           <div className=" flex flex-col gap-10">
@@ -85,7 +85,7 @@ const About = () => {
                 href="/information"
                 className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
               >
-                <span className="text-2xl">More information</span>
+                <span className="text-2xl" aria-label="Learn more about me button">Learn more about me</span>
                 <svg
                   class="w-4"
                   fill="none"
@@ -131,7 +131,7 @@ const About = () => {
           </div>
         </section>
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -16,6 +16,7 @@ const Navlinks = () => {
                 type="button"
                 onClick={scrollToProjects}
                 className="hover:underline"
+                aria-label="Scroll to Projects section"
               >
                 {label}
               </button>
@@ -24,11 +25,12 @@ const Navlinks = () => {
                 type="button"
                 onClick={scrollToContact}
                 className="hover:underline"
+                aria-label="Scroll to Contact section"
               >
                 {label}
               </button>
             ) : (
-              <Link to={url} className="hover:underline">
+              <Link to={url} className="hover:underline" aria-label={label}>
                 {label}
               </Link>
             )}

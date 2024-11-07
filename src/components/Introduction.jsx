@@ -92,7 +92,7 @@ const Introduction = () => {
         className=" flex flex-col justify-center items-center gap-2 mt-12"
       >
         <span>
-          <button type="button" onClick={scrollToAbout}>
+          <button type="button" onClick={scrollToAbout} aria-label="Scroll to About section">
             <HiArrowLongDown className="text-5xl lg:text-5xl font-bold hover:text-yellow-500 transition-all 2s easeInOut" />
           </button>
         </span>

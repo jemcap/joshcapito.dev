@@ -42,6 +42,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 target="_blank"
                 className={hoverStyles}
+                aria-label={label}
               >
                 {label}
               </a>

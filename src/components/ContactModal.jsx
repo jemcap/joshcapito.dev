@@ -48,7 +48,7 @@ const ContactModal = () => {
     <>
       <button
         onClick={() => document.getElementById("my_modal_2").showModal()}
-        className="hover:text-yellow-500 transition-all 2s ease"
+        className="hover:text-yellow-500 transition-all 2s ease" aria-label="Open"
       >
         Drop me a message
       </button>
@@ -122,7 +122,7 @@ const ContactModal = () => {
           </form>
         </div>
         <form method="dialog" className="modal-backdrop">
-          <button>Close</button>
+          <button aria-label="Close">Close</button>
         </form>
       </dialog>
     </>

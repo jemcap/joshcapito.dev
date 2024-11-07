@@ -139,7 +139,7 @@ export const projectsList = [
     type: "Game project",
     image: BlockBuster,
     description:
-      "Block Buster is a simple but engaging memory game designed to challenge and enhance players' cognitive skills. In this fast-paced game, players must memorise the positions of blocks that light up on the screen. As players progress through the levels, the number of blocks increases, increasing the challenge and keeping the gameplay exciting.",
+      "Block Buster is a simple but engaging browser memory game designed to challenge and enhance players' cognitive skills. In this fast-paced game, players must memorise the positions of blocks that light up on the screen. As players progress through the levels, the number of blocks increases, increasing the challenge and keeping the gameplay exciting.",
     stack: [
       { id: 1, label: "HTML5" },
       { id: 2, label: "CSS3" },
