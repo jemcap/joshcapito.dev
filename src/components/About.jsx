@@ -107,7 +107,7 @@ const About = () => {
             </div>
           </div>
           <div className="flex flex-col justify-center text-5xl lg:text-7xl my-28">
-            <motion.h5
+            <motion.h3
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
@@ -117,7 +117,7 @@ const About = () => {
               className="text-xl lg:text-3xl mb-10"
             >
               I've built projects using:
-            </motion.h5>
+            </motion.h3>
             <ul className="flex flex-row gap-10 flex-wrap justify-center">
               {techStackList.map((item, i) => {
                 const { id, icon, label } = item;

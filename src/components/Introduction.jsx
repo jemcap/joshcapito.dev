@@ -69,14 +69,19 @@ const Introduction = () => {
         </h1>
         <ul className="flex items-center justify-center text-4xl gap-5 mt-12">
           {socialMediaIcons.map((item, i) => {
-            const { id, icon, url } = item;
+            const { id, icon, url, label } = item;
             return (
               <li
                 key={id}
                 ref={(el) => (socialRef.current[i] = el)}
                 className="flex flex-col justify-center items-center opacity-0 hover:text-yellow-500 text-4xl "
               >
-                <a href={url} rel="noopener noreferrer" target="_blank">
+                <a
+                  href={url}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label={label}
+                >
                   {icon}
                 </a>
               </li>
@@ -92,7 +97,11 @@ const Introduction = () => {
         className=" flex flex-col justify-center items-center gap-2 mt-12"
       >
         <span>
-          <button type="button" onClick={scrollToAbout} aria-label="Scroll to About section">
+          <button
+            type="button"
+            onClick={scrollToAbout}
+            aria-label="Scroll to About section"
+          >
             <HiArrowLongDown className="text-5xl lg:text-5xl font-bold hover:text-yellow-500 transition-all 2s easeInOut" />
           </button>
         </span>
