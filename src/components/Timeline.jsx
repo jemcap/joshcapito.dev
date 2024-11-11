@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Timeline = () => {
   const variants = {
@@ -45,8 +46,9 @@ const Timeline = () => {
           </div>
           It was lockdown. Nothing else to do (or can do), so I tried out
           designing websites. One thing lead to another, and out of curiousity,
-          I ended up building several simple sites with just HTML and CSS. I
-          found it extremely fun and rewarding, which sparked my interest in web
+          I ended up building several simple sites with just{" "}
+          <span className="font-semibold">HTML and CSS</span>. I found it
+          extremely fun and rewarding, which sparked my interest in web
           development.
         </div>
         <hr />
@@ -86,7 +88,7 @@ const Timeline = () => {
           </span>
           . I joined the website team, contributing to UI design as part of a
           larger collaborative project. This was my first chance to apply and
-          grow my UX/UI skills in a practical team environment.
+          grow my UX/UI skills in a dynamic team environment.
         </div>
         <hr />
       </motion.li>
@@ -197,8 +199,11 @@ const Timeline = () => {
           more insights into web development and sharpen my skills, and this
           program seemed like the perfect opportunity to do just that. I gained
           in-depth insights on frontend languages and frameworks such as
-          JavaScript, jQuery, NodeJS, React, which allowed me to be more
-          prepared with using the tools I needed to succeed in this field.
+          <span className="font-semibold"> JavaScript</span>,{" "}
+          <span className="font-semibold"> jQuery</span>,{" "}
+          <span className="font-semibold">node.js</span>, and{" "}
+          <span className="font-semibold"> React</span>, which allowed me to be
+          more prepared with using the tools I needed to succeed in this field.
         </div>
         <hr />
       </motion.li>
@@ -227,13 +232,19 @@ const Timeline = () => {
         <div className="timeline-end mb-10">
           <time className="font-mono italic">2022-2024</time>
           <div className="text-lg font-black">Junior DevOps Engineer</div>
-          <div className="text-sm font-black">dcloud9 ltd.</div>
-          At the same time, I stepped out of my comfort zone and had the
-          incredible opportunity to learn building APIs with Python, and
-          Automation with Terraform, as a Junior DevOps Engineer with dcloud9
-          Ltd. What excited me most about this role was the chance to explore
-          and utilise AWS services while contributing to the development of an
-          eConsent application.
+          <div className="text-sm font-black">dcloud9 ltd.</div>I stepped out of
+          my comfort zone and had an incredible opportunity to build APIs with{" "}
+          <span className="font-semibold">Python</span> and{" "}
+          <span className="font-semibold">GraphQL</span> automate processes
+          using <span className="font-semibold">Terraform</span> and{" "}
+          <span className="font-semibold">AWS</span> as a Junior DevOps Engineer
+          at <span className="italic">dcloud9 Ltd.</span> This role was in
+          collaboration with the{" "}
+          <Link to="https://www.iavi.org/" className="italic underline">
+            International AIDS Vaccine Initiative (IAVI)
+          </Link>{" "}
+          for their MAGY project, where I contributed to developing a robust
+          e-consent platform and an Admin app.
         </div>
         <hr />
       </motion.li>
@@ -262,15 +273,20 @@ const Timeline = () => {
         <div className="timeline-start mb-10 md:text-end">
           <time className="font-mono italic">2023-2024</time>
           <div className="text-lg font-black">Frontend Developer Intern</div>
-          <div className="text-sm font-black">PolicyCON Ltd.</div>
-          During my time as a Junior DevOps Engineer, I secured an internship as
-          a Frontend Development Intern with PolicyCON Ltd., an exciting company
-          poised to revolutionise the think-tank industry by making
-          policy-making more public-driven. This role allowed me to gain
-          hands-on experience with React, TypeScript, and TailwindCSS while
-          developing components, and I'm confident to say that it boosted my
-          confidence in presenting to clients, making design choices,
-          collaborating with developers, and following good coding practices.
+          <div className="text-sm font-black">PolicyCON Ltd.</div>I secured an
+          internship as a Frontend Development Intern with{" "}
+          <Link to="https://policycon.com/" className="italic underline">
+            PolicyCON Ltd.
+          </Link>
+          , an exciting company poised to revolutionise the think-tank industry
+          by making policy-making more public-driven. This role allowed me to
+          gain hands-on experience with{" "}
+          <span className="font-semibold">React</span>,{" "}
+          <span className="font-semibold">TypeScript</span>, and{" "}
+          <span className="font-semibold">TailwindCSS</span> while developing
+          components, and I'm confident to say that it boosted my confidence in
+          presenting to clients, making design choices, collaborating with
+          developers, and following good coding practices.
         </div>
       </motion.li>
     </ul>
