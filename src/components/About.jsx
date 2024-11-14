@@ -65,9 +65,8 @@ const About = () => {
               viewport={{ once: true }}
               className="text-xl md:text-3xl lg:text-5xl  "
             >
-              Based in Cambridge, UK, I'm a{" "}
-              <Highlight delay="1">Junior Frontend Web Developer</Highlight>{" "}
-              with a background in Product Design. My{" "}
+              I'm a <Highlight delay="1">Frontend Web Developer</Highlight> with
+              a background in Product Design. My{" "}
               <Highlight delay="1.5">passion for UX/UI design</Highlight> fuels
               my creativity and inspires me to create innovative coding
               solutions and{" "}
