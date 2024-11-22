@@ -92,18 +92,16 @@ export const projectsList = [
               <b>Solution:</b>
               <ul>
                 <li>
-                  • Responsive Design: A fully responsive application ensures
-                  seamless usability across devices, improving accessibility for
-                  diverse users.
+                  • A fully responsive application ensures excellent usability
+                  across devices, improving accessibility for diverse users.
                 </li>
                 <li>
-                  • Custom Search Features: Users can filter recipes by
-                  keywords, dietary preferences, and cuisines, making it easy to
-                  find tailored meal options.
+                  • Users can filter recipes by keywords, dietary preferences,
+                  and cuisines, making it easy to find tailored meal options.
                 </li>
                 <li>
-                  • Intuitive User Interface: A clean, organised layout
-                  simplifies navigation and encourages engagement.
+                  • A clean, organised layout simplifies navigation and
+                  encourages engagement.
                 </li>
               </ul>
             </div>
@@ -111,18 +109,18 @@ export const projectsList = [
               <b>Impact:</b>
               <ul>
                 <li>
-                  • Increased Efficiency: Feedback from initial users confirmed
-                  that the app simplifies meal discovery and planning, saving
-                  time and effort.
+                  • Excellent feedback from users — confirmed that the app
+                  simplifies meal discovery and planning, saving time and
+                  effort.
                 </li>
                 <li>
-                  • Enhanced Accessibility: A responsive design ensures users
-                  can access the app on any device with ease.
+                  • A responsive design ensures users can access the app on any
+                  device with ease.
                 </li>
                 <li>
-                  • Improved User Engagement: The custom filtering and
-                  user-friendly interface resulted in a significant reduction in
-                  bounce rates and improved overall satisfaction.
+                  • The custom filtering and user-friendly interface resulted in
+                  a significant reduction in bounce rates and improved overall
+                  satisfaction.
                 </li>
               </ul>
             </div>
@@ -161,7 +159,7 @@ export const projectsList = [
             <div>
               <b>Problem/Opportunity:</b>
               <p>
-                The existing website was outdated, lacking modern functionality,
+                The existing website is outdated, lacking modern functionality,
                 and failing to reflect the gym's strength and ethos. It suffered
                 from slow performance and inconsistent responsiveness across
                 devices, leading to a poor user experience. This gave me an
@@ -182,25 +180,28 @@ export const projectsList = [
                 </li>
                 <li>
                   • Faster loading time by implementing performance
-                  optimisation, leveraging Next.js for server-side rendering
-                  (SSR) and static site generation (SSG). These methods reduced
-                  initial page load times, improved SEO rankings, and ensured
-                  users experienced smooth transitions between pages.
+                  optimisation, using Next.js for server-side rendering and
+                  static site generation. These methods reduced initial page
+                  load times, improved SEO, and ensured users experienced smooth
+                  transitions between pages.
                 </li>
               </ul>
             </div>
             <div>
               <b>Impact:</b>
               <ul>
-                <li>• Load times reduced by 20%</li>
+                <li>• Reduced load times by 20%.</li>{" "}
                 <li>
-                  • Modernised design and smoother navigation have made it
-                  easier for potential clients to explore the website, improving
-                  user experiences and accessilbility.
-                </li>
+                  • Modernised design and smoother navigation improved user
+                  experience and accessibility.
+                </li>{" "}
                 <li>
-                  • Enhanced branding, improved colours, ensuring the design
-                  aligns with the gym's professional image and core identity.
+                  • Enhanced branding with a professional, cohesive design
+                  aligned to the gym's identity.
+                </li>{" "}
+                <li>
+                  • Delivered a client-aligned website with clear communication
+                  all throughout and managed expectations.
                 </li>
               </ul>
             </div>
@@ -248,20 +249,20 @@ export const projectsList = [
               <b>Solution:</b>
               <ul>
                 <li>
-                  • State Management: Utilised Redux Toolkit for efficient
-                  global state management, providing users with a seamless and
-                  consistent experience as they browse through products.
+                  • Utilised Redux Toolkit for efficient global state
+                  management, providing users with a seamless and consistent
+                  experience as they browse through products.
                 </li>
                 <li>
-                  • Data Fetching: Integrated React Query and Axios to fetch
-                  product data dynamically and handle API calls effectively,
-                  improving performance and reducing re-renders and number of
-                  requests through caching.
+                  • Integrated React Query and Axios to fetch product data
+                  dynamically and handle API calls effectively, improving
+                  performance and reducing re-renders and number of requests
+                  through caching.
                 </li>
                 <li>
-                  • Routing: Used React Router DOM to implement smooth
-                  navigation between different pages without reloading, creating
-                  a faster and more fluid user experience.
+                  • Used React Router DOM to implement smooth navigation between
+                  different pages without reloading, creating a faster and more
+                  fluid user experience.
                 </li>
               </ul>
             </div>
