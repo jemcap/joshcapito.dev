@@ -10,6 +10,7 @@ import {
   TailwindIcon,
   LinkedInIcon,
   GithubIcon,
+  AWSIcon,
 } from "../utils/utils";
 
 import MealMasterImg from "../assets/meal_master.png";
@@ -42,6 +43,8 @@ export const techStackList = [
   { id: 7, icon: <TailwindIcon />, label: "TailwindCSS" },
 ];
 
+export const learningStack = [{ id: 1, icon: <AWSIcon />, label: "AWS" }];
+
 export const socialMediaIcons = [
   {
     id: 1,
@@ -63,8 +66,70 @@ export const projectsList = [
     title: "Meal Master",
     type: "Group project",
     image: MealMasterImg,
-    description:
-      "Meal Master was a group project carried out during the final weeks of the sixteen-week bootcamp in front-end web development that was built as a sophisticated yet user-friendly React application designed to simplify the process of finding and preparing meals. By allowing users to search for recipes based on specific keywords and dietary preferences, Meal Master caters to a wide range of culinary needs and preferences.",
+    description: (
+      <>
+        <div className="flex flex-col gap-2">
+          <p>
+            Meal Master, a final group project from a 16-week frontend web
+            development bootcamp, is a React application designed to simplify
+            meal planning. It enables users to search for recipes based on
+            keywords and dietary preferences, catering to diverse culinary
+            needs.
+          </p>
+
+          <div className="border-l-2 pl-5 text-sm flex flex-col gap-5 my-5">
+            <div>
+              <b>Problem/Opportunity:</b>
+              <p>
+                Planning meals can be overwhelming, especially for people with
+                specific dietary preferences or restrictions. Users often face
+                difficulty finding recipes that cater to their needs. This
+                project presented an opportunity to create a streamlined,
+                intuitive solution for meal discovery and planning.
+              </p>
+            </div>
+            <div>
+              <b>Solution:</b>
+              <ul>
+                <li>
+                  • Responsive Design: A fully responsive application ensures
+                  seamless usability across devices, improving accessibility for
+                  diverse users.
+                </li>
+                <li>
+                  • Custom Search Features: Users can filter recipes by
+                  keywords, dietary preferences, and cuisines, making it easy to
+                  find tailored meal options.
+                </li>
+                <li>
+                  • Intuitive User Interface: A clean, organised layout
+                  simplifies navigation and encourages engagement.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <b>Impact:</b>
+              <ul>
+                <li>
+                  • Increased Efficiency: Feedback from initial users confirmed
+                  that the app simplifies meal discovery and planning, saving
+                  time and effort.
+                </li>
+                <li>
+                  • Enhanced Accessibility: A responsive design ensures users
+                  can access the app on any device with ease.
+                </li>
+                <li>
+                  • Improved User Engagement: The custom filtering and
+                  user-friendly interface resulted in a significant reduction in
+                  bounce rates and improved overall satisfaction.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </>
+    ),
     stack: [
       { id: 1, label: "React" },
       { id: 2, label: "Material UI" },
@@ -82,13 +147,65 @@ export const projectsList = [
     image: NovaPerformanceSite,
     description: (
       <>
-        Nova Performance, an independent gym business, barbell club, and a
-        respected strength sports facility. This volunteer project allowed me to
-        work with the gym owner to redesign and redevelop the website into a
-        full-stack application. You can{" "}
-        <OriginalWebsiteLink>view the original site here</OriginalWebsiteLink>.
-        The site is fast, responsive, and visually appealing, enhancing user
-        engagement and showcasing the gym's services.{" "}
+        <div className="flex flex-col gap-2 my-5">
+          <p>
+            Nova Performance, an independent gym business, barbell club, and a
+            respected strength sports facility. This volunteer project allowed
+            me to collaborate with the gym owner to redesign and redevelop their
+            website. You can{" "}
+            <OriginalWebsiteLink>
+              view the original site here
+            </OriginalWebsiteLink>
+          </p>
+          <div className="border-l-2 pl-5 text-sm flex flex-col gap-5 my-5">
+            <div>
+              <b>Problem/Opportunity:</b>
+              <p>
+                The existing website was outdated, lacking modern functionality,
+                and failing to reflect the gym's strength and ethos. It suffered
+                from slow performance and inconsistent responsiveness across
+                devices, leading to a poor user experience. This gave me an
+                excellent opportunity to develop my skills in React, handle
+                client communications, manage the project from start to finish,
+                and deliver a website that not only met the client's needs but
+                also elevated their online presence.
+              </p>
+            </div>
+
+            <div>
+              <b>Solution:</b>
+              <ul>
+                <li>
+                  • A responsive design that adapts seamlessly across desktop,
+                  tablet, and mobile devices, improving accessibility and
+                  usability.
+                </li>
+                <li>
+                  • Faster loading time by implementing performance
+                  optimisation, leveraging Next.js for server-side rendering
+                  (SSR) and static site generation (SSG). These methods reduced
+                  initial page load times, improved SEO rankings, and ensured
+                  users experienced smooth transitions between pages.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <b>Impact:</b>
+              <ul>
+                <li>• Load times reduced by 20%</li>
+                <li>
+                  • Modernised design and smoother navigation have made it
+                  easier for potential clients to explore the website, improving
+                  user experiences and accessilbility.
+                </li>
+                <li>
+                  • Enhanced branding, improved colours, ensuring the design
+                  aligns with the gym's professional image and core identity.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </>
     ),
     stack: [
@@ -105,10 +222,68 @@ export const projectsList = [
   {
     id: uuidv4(),
     title: "Solace Furnitures",
-    type: "Personal project",
+    type: "Exploration project",
     image: SolaceFurnitures,
-    description:
-      "Solace Furnitures is a modern ecommerce platform designed to provide a seamless shopping experience for furniture enthusiasts. The website leverages contemporary technologies to ensure fast, responsive, and visually appealing user interactions.",
+    description: (
+      <>
+        <div className="flex flex-col gap-2 my-5">
+          <p>
+            Solace Furnitures is a modern ecommerce platform designed to provide
+            a great shopping experience for furniture enthusiasts.
+          </p>
+          <div className="border-l-2 pl-5 text-sm flex flex-col gap-5 my-5">
+            <div>
+              <b>Problem/Opportunity:</b>
+              <p>
+                This project was a great chance to really dive into React and
+                its advanced features while building a real-world ecommerce
+                platform. The goal was to create a smooth, responsive shopping
+                experience that worked well across devices, improved page
+                loading times, and showcased products in a visually appealing
+                way—all while tackling the performance and functionality
+                challenges many ecommerce sites face.
+              </p>
+            </div>
+            <div>
+              <b>Solution:</b>
+              <ul>
+                <li>
+                  • State Management: Utilised Redux Toolkit for efficient
+                  global state management, providing users with a seamless and
+                  consistent experience as they browse through products.
+                </li>
+                <li>
+                  • Data Fetching: Integrated React Query and Axios to fetch
+                  product data dynamically and handle API calls effectively,
+                  improving performance and reducing re-renders and number of
+                  requests through caching.
+                </li>
+                <li>
+                  • Routing: Used React Router DOM to implement smooth
+                  navigation between different pages without reloading, creating
+                  a faster and more fluid user experience.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <b>Impact:</b>
+              <ul>
+                <li>• Faster load times and improved overall performance.</li>
+                <li>
+                  • Responsive design that offers a smooth user experience
+                  across all devices.
+                </li>
+                <li>
+                  • Modern UI that aligns with the brand's identity, enhancing
+                  the shopping experience.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </>
+    ),
+
     stack: [
       { id: 1, label: "React" },
       { id: 2, label: "TailwindCSS" },
@@ -120,44 +295,135 @@ export const projectsList = [
     github: "https://github.com/jemcap/solace-furniture/",
     website: "https://solacefurnitures.netlify.app/",
   },
-  {
-    id: uuidv4(),
-    title: "Sprintyper",
-    type: "Game project",
-    image: Sprintyper,
-    description:
-      "Sprintyper is an innovative and engaging tool designed to help individuals improve their typing skills through practice and game-based learning. The platform features four distinct levels, each progressively increasing in complexity, challenging users to accurately type out phrases and sentences appropriate to their skill level.",
-    stack: [
-      { id: 1, label: "HTML5" },
-      { id: 2, label: "CSS3" },
-      { id: 3, label: "JavaScript" },
-    ],
-    github: "https://github.com/jemcap/speed-typer",
-    website: "https://speed-typer-tool.netlify.app/",
-  },
-  {
-    id: uuidv4(),
-    title: "Block Buster",
-    type: "Game project",
-    image: BlockBuster,
-    description:
-      "Block Buster is a simple but engaging browser memory game designed to challenge and enhance players' cognitive skills. In this fast-paced game, players must memorise the positions of blocks that light up on the screen. As players progress through the levels, the number of blocks increases, increasing the challenge and keeping the gameplay exciting.",
-    stack: [
-      { id: 1, label: "HTML5" },
-      { id: 2, label: "CSS3" },
-      { id: 3, label: "JavaScript" },
-      { id: 4, label: "Firebase" },
-    ],
-    github: "https://github.com/jemcap/block-buster",
-    website: "https://blockbustergame.netlify.app/",
-  },
+  // {
+  //   id: uuidv4(),
+  //   title: "Sprintyper",
+  //   type: "Game project",
+  //   image: Sprintyper,
+  //   description:
+  //     "Sprintyper is an innovative and engaging tool designed to help individuals improve their typing skills through practice and game-based learning. The platform features four distinct levels, each progressively increasing in complexity, challenging users to accurately type out phrases and sentences appropriate to their skill level.",
+  //   stack: [
+  //     { id: 1, label: "HTML5" },
+  //     { id: 2, label: "CSS3" },
+  //     { id: 3, label: "JavaScript" },
+  //   ],
+  //   github: "https://github.com/jemcap/speed-typer",
+  //   website: "https://speed-typer-tool.netlify.app/",
+  // },
+  // {
+  //   id: uuidv4(),
+  //   title: "Block Buster",
+  //   type: "Game project",
+  //   image: BlockBuster,
+  //   description: (
+  //     <>
+  //       <div className="flex flex-col gap-2 my-5">
+  //         <p>
+  //           Block Buster is a simple but engaging browser memory game designed
+  //           to challenge and enhance players' cognitive skills. In this
+  //           fast-paced game, players must memorise the positions of blocks that
+  //           light up on the screen. As players progress through the levels, the
+  //           number of blocks increases, increasing the challenge and keeping the
+  //           gameplay exciting.
+  //         </p>
+  //       </div>
+  //       <div className="border-l-2 pl-5 text-sm flex flex-col gap-5 my-5">
+  //         <div>
+  //           <b>Problem/Opportunity:</b>
+  //           <p>
+  //             Inspired by that one YouTube video from like 16 years ago{" "}
+  //             <a
+  //               href="https://www.youtube.com/watch?v=ravykEih1rE"
+  //               target="_blank"
+  //               noreferrer
+  //               noopener
+  //             >
+  //               (watch this!)
+  //             </a>
+  //           </p>
+  //         </div>
+  //       </div>
+  //     </>
+  //   ),
+
+  //   stack: [
+  //     { id: 1, label: "HTML5" },
+  //     { id: 2, label: "CSS3" },
+  //     { id: 3, label: "JavaScript" },
+  //     { id: 4, label: "Firebase" },
+  //   ],
+  //   github: "https://github.com/jemcap/block-buster",
+  //   website: "https://blockbustergame.netlify.app/",
+  // },
   {
     id: uuidv4(),
     title: "Online Portfolio",
     type: "Personal project",
     image: Portfolio,
-    description:
-      "This project is exactly the site you're on right now! It's a showcase of my work and skills as a frontend developer thus far. The portfolio highlights various projects I've completed, each demonstrating my skills to create visually appealing and functional web applications.",
+    description: (
+      <>
+        <div className="flex flex-col gap-2 my-5">
+          <p>
+            This project is exactly the site you're on right now! It's a
+            showcase of my work and skills as a frontend developer thus far. The
+            portfolio highlights various projects I've completed, each
+            demonstrating my skills to create visually appealing and functional
+            web applications.
+          </p>
+          <div className="border-l-2 pl-5 text-sm flex flex-col gap-5 my-5">
+            <div>
+              <b>Problem/Opportunity:</b>
+              <p>
+                This project provided an excellent opportunity to create a
+                personal platform to showcase my projects, technical skills, and
+                creativity while exploring advanced frontend development
+                concepts. My goal was to design a modern, professional portfolio
+                that looks cool, easy to navigate, and allows potential
+                employers and collaborators to view my work at a glance. It also
+                serves as a continuous learning tool, pushing me to stay updated
+                with the latest technologies as I refine and expand my portfolio
+                over time.
+              </p>
+            </div>
+            <div>
+              <b>Solution:</b>
+              <ul>
+                <li>
+                  • Built using React and TailwindCSS to ensure a highly
+                  responsive and visually polished design.
+                </li>
+                <li>
+                  • Enhanced interactivity with animations and transitions using
+                  by Framer Motion, creating a unique user experience.
+                </li>
+                <li>
+                  • Integrated EmailJS for a functional contact form, allowing
+                  direct communication with users or recruiters.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <b>Impact:</b>
+              <ul>
+                <li>
+                  • Delivered a professional online presence to showcase my
+                  portfolio effectively.
+                </li>
+                <li>
+                  • Created a responsive, engaging, and easy-to-navigate site
+                  that adapts seamlessly to any device.
+                </li>
+                <li>
+                  • Demonstrated proficiency in modern frontend technologies and
+                  design principles.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </>
+    ),
+
     stack: [
       { id: 1, label: "React" },
       { id: 2, label: "TailwindCSS" },

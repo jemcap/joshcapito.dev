@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { techStackList } from "../constants/lists";
+import { learningStack, techStackList } from "../constants/lists";
 
 export const Highlight = ({ children, delay = 0 }) => {
   return (
@@ -88,7 +88,7 @@ const About = () => {
                   className="text-2xl"
                   aria-label="Learn more about me button"
                 >
-                  Learn more about me
+                  Discover my journey
                 </span>
                 <svg
                   class="w-4"

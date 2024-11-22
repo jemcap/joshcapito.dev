@@ -7,7 +7,7 @@ const Projects = () => {
     <section className="bg-neutral-100 h-full py-10">
       <div className="flex flex-col gap-10 align-elements">
         <div className="text-center text-3xl font-bold">
-          <h1>Featured Projects</h1>
+          <h1 className="underline">Featured Projects</h1>
         </div>
         <div className="grid grid-cols-1 gap-12">
           {projectsList.map((project) => {
@@ -41,7 +41,7 @@ const Projects = () => {
                   </div>
                   <p className="text-start max-md:text-lg">{description}</p>
                   <p className="text-start">
-                    <ul className="flex gap-2 flex-wrap">
+                    <ul className="flex gap-2 flex-wrap mb-7">
                       {stack.map((item) => {
                         const { id, label } = item;
                         return (
