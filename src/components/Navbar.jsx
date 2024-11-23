@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="align-elements navbar">
         {showLogo && (
           <motion.div className="navbar-start" style={{ opacity }}>
-            <a href="/" className="font-bold text-xl">
+            <a href="/" className="font-light text-xl font-gray-500">
               joshua capito
             </a>
           </motion.div>

@@ -1,7 +1,6 @@
 import { NAV_LINKS } from "../constants/links";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context/context";
-import CVPdf from "../assets/CV_CAPITO_JOSHUA.docx.pdf";
 
 const Navlinks = () => {
   const { scrollToProjects, scrollToContact } = useGlobalContext();

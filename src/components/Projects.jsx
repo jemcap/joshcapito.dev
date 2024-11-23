@@ -4,10 +4,11 @@ import { GithubIcon } from "../utils/utils";
 
 const Projects = () => {
   return (
-    <section className="bg-neutral-100 h-full py-10">
+    <section className=" h-full py-20">
       <div className="flex flex-col gap-10 align-elements">
-        <div className="text-center text-3xl font-bold">
-          <h1 className="underline">Featured Projects</h1>
+        <div className="text-center">
+          <h1 className=" text-3xl font-bold">Featured Projects</h1>
+          <p>Check out some of my projects I've done below</p>
         </div>
         <div className="grid grid-cols-1 gap-12">
           {projectsList.map((project) => {
@@ -22,7 +23,10 @@ const Projects = () => {
               website,
             } = project;
             return (
-              <div key={id} className="card card-side bg-base-100 shadow-xl">
+              <div
+                key={id}
+                className="card card-side bg-base-100 shadow-lg mt-6"
+              >
                 <figure className="hidden md:flex md:flex-[0.35]">
                   <img
                     src={image}
@@ -57,7 +61,7 @@ const Projects = () => {
                   </p>
 
                   <div className="card-actions justify-start">
-                    <div className="w-full flex flex-col sm:flex-row gap-3 sm:gap-2 items-center">
+                    <div className="w-full flex flex-col sm:flex-row gap-6 sm:gap-2 items-center">
                       <a
                         href={github}
                         target="_blank"

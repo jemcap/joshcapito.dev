@@ -17,7 +17,7 @@ const Timeline = () => {
   };
 
   return (
-    <ul className="timeline font-normal text-xl timeline-snap-icon max-md:timeline-compact timeline-vertical my-44">
+    <ul className="timeline font-light text-lg timeline-snap-icon max-md:timeline-compact timeline-vertical my-44 text-gray-800">
       <motion.li
         initial="initial"
         animate="animate"

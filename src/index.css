@@ -10,6 +10,6 @@
 
 @layer components {
   .align-elements {
-    @apply mx-auto max-w-[1250px] px-8 text-center;
+    @apply mx-auto max-w-[1050px] px-8 text-center;
   }
 }

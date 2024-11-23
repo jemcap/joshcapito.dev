@@ -16,6 +16,7 @@ const Landing = () => {
       <div ref={projectsRef}>
         <Projects />
       </div>
+      <div></div>
       <div ref={contactRef}>
         <Contact />
       </div>

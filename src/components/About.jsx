@@ -40,8 +40,8 @@ const About = () => {
 
   return (
     <main>
-      <div className="flex flex-col gap-y-52 align-elements py-32">
-        <section className=" w-full max-w-full mx-auto">
+      <div className="flex flex-col gap-y-52 align-elements pt-20">
+        <section className=" w-full max-w-full mx-auto border-b-neutral-300 border-b-2">
           <div className=" flex flex-col gap-10">
             <motion.h1
               initial={{ opacity: 0, x: -200 }}
@@ -51,9 +51,9 @@ const About = () => {
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-center"
+              className="text-5xl md:text-6xl lg:text-7xl text-center"
             >
-              👋 Hi! I'm Josh
+              👋 Hi, I'm Josh.
             </motion.h1>
             <motion.h2
               initial={{ opacity: 0, x: -100 }}
@@ -63,7 +63,7 @@ const About = () => {
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className="text-xl md:text-3xl lg:text-5xl  "
+              className="text-xl md:text-3xl lg:text-5xl font-light text-gray-700"
             >
               I'm a <Highlight delay="1">Frontend Web Developer</Highlight> with
               a background in Product Design. My{" "}
@@ -78,7 +78,7 @@ const About = () => {
               public through digital arts.
             </motion.h2>
           </div>
-          <div className="mt-9">
+          <div className="mt-16">
             <div>
               <a
                 href="/information"
@@ -105,7 +105,7 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col justify-center text-5xl lg:text-7xl my-28">
+          <div className="flex flex-col justify-center text-5xl lg:text-7xl mt-20 mb-20">
             <motion.h3
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -113,7 +113,7 @@ const About = () => {
                 duration: 1.5,
               }}
               viewport={{ once: true }}
-              className="text-xl lg:text-3xl mb-10"
+              className="text-xl lg:text-xl mb-4"
             >
               I've built projects using:
             </motion.h3>

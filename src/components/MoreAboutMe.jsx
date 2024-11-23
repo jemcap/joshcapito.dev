@@ -8,7 +8,7 @@ const MoreAboutMe = () => {
           joshua emmanuel capito
           <hr />
         </h1>
-        <div className="text-xl flex flex-col gap-8">
+        <div className="text-lg flex flex-col gap-8 text-gray-800 font-light">
           <p>
             Hi, I'm Josh, a frontend web developer with a background in product
             design. After graduating from{" "}
