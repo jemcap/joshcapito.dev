@@ -141,7 +141,7 @@ export const projectsList = [
   {
     id: uuidv4(),
     title: "Nova Performance — Barbell Club",
-    type: "Volunteer project",
+    type: "Client project",
     image: NovaPerformanceSite,
     description: (
       <>
@@ -433,6 +433,44 @@ export const projectsList = [
     ],
     github: "https://github.com/jemcap/projects-portfolio",
     website: "#",
+  },
+];
+
+export const projectsInProgress = [
+  {
+    id: uuidv4(),
+    title: "East London Waterworks Park",
+    type: "Volunteering",
+    description: (
+      <p>
+        Volunteered as a Web Developer to contribute to a community-led working
+        circle who are working on coordinating content and infrastructure for
+        the East London Waterworks Park website:{" "}
+        <a
+          href="https://www.elwp.org.uk/"
+          target="_blank"
+          noopener
+          noreferrer
+          className="text-blue-500"
+        >
+          https://www.elwp.org.uk/
+        </a>
+      </p>
+    ),
+  },
+  {
+    id: uuidv4(),
+    title: "Powerlifting Recovery Helper",
+    type: "Personal Project",
+    description:
+      "Recovery is essential in powerlifting to repair muscles, prevent injuries, and keep making progress. An app could make this easier by offering personalised advice based on your training data, like how intense your sessions are and how you're feeling. It could track your sleep, nutrition, and hydration, and suggest things like rest days, stretches, or active recovery exercises. With added tools for mental wellness and progress tracking, it would give lifters a simple, effective way to stay on top of their recovery.",
+  },
+  {
+    id: uuidv4(),
+    title: "Edison's Barber Shop",
+    type: "Client Project",
+    description:
+      "I reached out to Edison, the owner of Edison's Barber Shop, to design and develop a professional, user-friendly website that showcases his services, reflects the shop's welcoming vibe, and helps attract more customers while building professionalism and trust. While Edison currently advertises through a Facebook page, not everyone uses Facebook, so creating a website would significantly expand his reach to potential customers.",
   },
 ];
 

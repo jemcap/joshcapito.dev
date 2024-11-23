@@ -4,6 +4,7 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import { useGlobalContext } from "../context/context";
 import Contact from "../components/Contact";
+import UpcomingProjects from "../components/UpcomingProjects";
 
 const Landing = () => {
   const { projectsRef, contactRef, aboutRef } = useGlobalContext();
@@ -16,7 +17,7 @@ const Landing = () => {
       <div ref={projectsRef}>
         <Projects />
       </div>
-      <div></div>
+
       <div ref={contactRef}>
         <Contact />
       </div>
