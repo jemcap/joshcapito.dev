@@ -25,6 +25,34 @@ const UpcomingProjects = () => {
             );
           })}
         </div>
+        <div>
+          <a
+            href="https://github.com/jemcap"
+            target="_blank"
+            noopener
+            noreferrer
+            className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
+          >
+            <span
+              className="text-2xl lg:text-lg"
+              aria-label="View GitHub Projects button"
+            >
+              View More Projects
+            </span>
+            <svg
+              class="w-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              className="w-6 h-6 ml-2"
+            >
+              <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </>
   );

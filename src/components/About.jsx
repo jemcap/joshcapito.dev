@@ -85,7 +85,7 @@ const About = () => {
                 className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
               >
                 <span
-                  className="text-2xl"
+                  className="text-2xl lg:text-lg"
                   aria-label="Learn more about me button"
                 >
                   Discover my journey
