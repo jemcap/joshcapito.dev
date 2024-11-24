@@ -8,7 +8,7 @@ const Contributions = () => {
           <h1 className="text-3xl font-bold">Project Contributions</h1>
           <p>Below are some other projects I have contributed to</p>
         </div>
-        <div></div>
+
         <div>
           {projectsContributions.map((project) => {
             const { id, title, type, year, description } = project;
