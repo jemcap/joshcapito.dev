@@ -464,7 +464,7 @@ export const projectsContributions = [
     title:
       "Nottingham Trent University Design Industries (NTUDI) — Committee of '22",
     type: "Industry Project",
-    year: "2022/2023",
+    year: "2021/2022",
     description: (
       <p>
         I took on the role of Team Lead for the Website Team for this initiative
@@ -473,6 +473,23 @@ export const projectsContributions = [
         and working with the team to design and develop an intuitive platform to
         showcase final-year undergraduate Product Design students to design
         professionals and entushiasts in the design industry.
+      </p>
+    ),
+  },
+  {
+    id: uuidv4(),
+    title:
+      "Nottingham Trent University Design Industries (NTUDI) — Committee of '21",
+    type: "Industry Project",
+    description: (
+      <p>
+        Enrolled as a team assistant/assistant web designer for the Nottingham
+        Trent University Design Industries (NTUDI) cohort '21 as part of
+        Nottingham Trent University's unique placement programme, Professional
+        Industry Projects (PIP). I was involved in weekly standup meetings,
+        discussing design ideas and iterations, and developing through Wix for
+        the NTUDI 2021 website. Other tasks included engaging with students to
+        curate a professional profile on the website.
       </p>
     ),
   },
