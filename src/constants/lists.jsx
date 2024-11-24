@@ -441,6 +441,7 @@ export const projectsContributions = [
     id: uuidv4(),
     title: "East London Waterworks Park",
     type: "Volunteering",
+    year: "2024/2025",
     description: (
       <p>
         Volunteered as a Web Developer to contribute to a community-led working
@@ -455,6 +456,23 @@ export const projectsContributions = [
         >
           https://www.elwp.org.uk/
         </a>
+      </p>
+    ),
+  },
+  {
+    id: uuidv4(),
+    title:
+      "Nottingham Trent University Design Industries (NTUDI) — Committee of '22",
+    type: "Industry Project",
+    year: "2022/2023",
+    description: (
+      <p>
+        I took on the role of Team Lead for the Website Team for this initiative
+        — a proud member of the 2022 cohort. My responsibilities include
+        assigning tasks, providing a clear direction and managing deliverables,
+        and working with the team to design and develop an intuitive platform to
+        showcase final-year undergraduate Product Design students to design
+        professionals and entushiasts in the design industry.
       </p>
     ),
   },
