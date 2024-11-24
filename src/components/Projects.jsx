@@ -1,12 +1,13 @@
 import React from "react";
 import UpcomingProjects from "./UpcomingProjects";
+import Contributions from "./Contributions";
 import { projectsList } from "../constants/lists";
 import { GithubIcon } from "../utils/utils";
 
 const Projects = () => {
   return (
     <section className=" h-full py-20">
-      <div className="flex flex-col gap-10 align-elements border-b-2 border-b-neutral-300 pb-20">
+      <div className="flex flex-col gap-10 align-elements  pb-20">
         <div className="text-center">
           <h1 className=" text-3xl font-bold">Featured Projects</h1>
           <p>Check out some of my projects I've done below</p>
@@ -107,6 +108,7 @@ const Projects = () => {
       </div>
       <section className="mt-20">
         <UpcomingProjects />
+        <Contributions />
       </section>
     </section>
   );

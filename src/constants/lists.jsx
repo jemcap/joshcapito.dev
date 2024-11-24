@@ -436,7 +436,7 @@ export const projectsList = [
   },
 ];
 
-export const projectsInProgress = [
+export const projectsContributions = [
   {
     id: uuidv4(),
     title: "East London Waterworks Park",
@@ -458,6 +458,9 @@ export const projectsInProgress = [
       </p>
     ),
   },
+];
+
+export const projectsInProgress = [
   {
     id: uuidv4(),
     title: "Powerlifting Recovery Helper",

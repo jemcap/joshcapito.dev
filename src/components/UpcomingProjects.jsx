@@ -3,12 +3,10 @@ import { projectsInProgress } from "../constants/lists";
 const UpcomingProjects = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 align-elements pb-20 max-w-xl">
+      <div className="flex flex-col gap-10 align-elements pb-20 max-w-xl border-b-2 border-neutral-300 border-t-2 border-t-neutral-300 py-20 my-20">
         <div className="text-center">
           <h1 className="text-3xl font-bold">Projects in Progress</h1>
-          <p>
-            Here are some projects I'm currently contributing to or building
-          </p>
+          <p>Here are some projects I'm currently building</p>
         </div>
         <div>
           {projectsInProgress.map((project) => {
