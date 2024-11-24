@@ -18,7 +18,7 @@ const UpcomingProjects = () => {
               >
                 <h1 className="text-xl font-bold">{title}</h1>
                 <small className="text-neutral-500">{type}</small>
-                <p className="mt-5">{description}</p>
+                <p className="mt-5 border-l-2 pl-5">{description}</p>
               </div>
             );
           })}

@@ -20,7 +20,7 @@ const Contributions = () => {
                 <h3 className="text-xl font-semibold text-start underline mb-10">
                   {year}
                 </h3>
-                <div className="border-l-2 border-l-slate-300 pl-5">
+                <div className="border-l-2 pl-5">
                   <h1 className="text-xl font-bold">{title}</h1>
                   <small className="text-neutral-500">{type}</small>
                   <p className="mt-5">{description}</p>

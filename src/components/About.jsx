@@ -63,7 +63,7 @@ const About = () => {
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className="text-xl md:text-3xl lg:text-5xl font-light text-gray-700"
+              className="text-xl md:text-2xl lg:text-4xl font-light text-gray-700"
             >
               I'm a <Highlight delay="1">Frontend Web Developer</Highlight> with
               a background in Product Design. My{" "}
