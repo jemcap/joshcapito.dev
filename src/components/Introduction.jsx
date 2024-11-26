@@ -23,18 +23,18 @@ const Introduction = () => {
     return () => clearTimeout(timeoutId);
   }, []);
 
-  const text = "Crafting experiences, one line at a time.".split(" ");
-  const totalDuration = 1.5 + (text.length - 1) / 5.5;
+  const text = '"code as my digital canvas"'.split(" ");
+  const totalDuration = 1.25 + (text.length - 1) / 5.5;
   return (
-    <div className="flex flex-col h-full justify-center items-center min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-slate-300 to-white">
-      <div className="text-center w-11/12 max-w-7xl font-bold text-4xl sm:text-6xl md:text-8xl lg:text-9xl gap-2 mt-36">
+    <div className="flex flex-col h-full justify-center items-center min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-slate-100 to-white">
+      <div className="text-center w-11/12 max-w-7xl  text-4xl sm:text-6xl md:text-8xl lg:text-9xl gap-2 mt-36">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: totalDuration }}
         >
           <div className="flex flex-col font-light justify-center items-center">
-            <div className="flex flex-col items-center lg:flex-row gap-6">
+            <div className="flex flex-col items-center lg:flex-row gap-6 max-lg:mb-8">
               <img
                 src={jcapImg}
                 alt=""
