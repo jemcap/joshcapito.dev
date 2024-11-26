@@ -11,6 +11,7 @@ import {
   LinkedInIcon,
   GithubIcon,
   AWSIcon,
+  DevToIcon,
 } from "../utils/utils";
 
 import MealMasterImg from "../assets/meal_master.png";
@@ -57,6 +58,12 @@ export const socialMediaIcons = [
     icon: <GithubIcon />,
     url: "https://github.com/jemcap",
     label: "Github",
+  },
+  {
+    id: 3,
+    icon: <DevToIcon />,
+    url: "https://dev.to/joshcapito",
+    label: "Dev.to",
   },
 ];
 

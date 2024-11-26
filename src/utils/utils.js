@@ -6,10 +6,11 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaAws } from "react-icons/fa"
+import { FaAws } from "react-icons/fa";
 
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaDev } from "react-icons/fa";
 
 export const HtmlIcon = IoLogoHtml5;
 export const CssIcon = IoLogoCss3;
@@ -22,3 +23,4 @@ export const AWSIcon = FaAws;
 
 export const LinkedInIcon = FaLinkedin;
 export const GithubIcon = FaGithub;
+export const DevToIcon = FaDev;

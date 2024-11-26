@@ -12,14 +12,14 @@ const Introduction = () => {
   const displayIcons = () => {
     socialRef.current.forEach((item, i) => {
       if (item) {
-        item.style.transition = `opacity 1.5s ease ${(i + 1) * 0.25}s`;
+        item.style.transition = `opacity 1.5s ease ${(i + 1) * 0.15}s`;
         item.style.opacity = 1;
       }
     });
   };
 
   useEffect(() => {
-    const timeoutId = setTimeout(displayIcons, 2500);
+    const timeoutId = setTimeout(displayIcons, 2000);
     return () => clearTimeout(timeoutId);
   }, []);
 
@@ -93,7 +93,7 @@ const Introduction = () => {
         href="#"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 4 }}
+        transition={{ duration: 1, delay: 3.5 }}
         className=" flex flex-col justify-center items-center gap-2 mt-12"
       >
         <span>
