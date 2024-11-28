@@ -59,12 +59,6 @@ export const socialMediaIcons = [
     url: "https://github.com/jemcap",
     label: "Github",
   },
-  {
-    id: 3,
-    icon: <DevToIcon />,
-    url: "https://dev.to/joshcapito",
-    label: "Dev.to",
-  },
 ];
 
 export const projectsList = [

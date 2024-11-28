@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { HiArrowLongDown } from "react-icons/hi2";
+
 import jcapImg from "../assets/capito_j_portrait.png";
 import { socialMediaIcons } from "../constants/lists";
 import { useRef, useEffect } from "react";
