@@ -10,6 +10,9 @@ import {
   TailwindIcon,
   LinkedInIcon,
   GithubIcon,
+  MongoDBIcon,
+  ExpressJSIcon,
+  ReduxTKIcon,
   AWSIcon,
   DevToIcon,
 } from "../utils/utils";
@@ -42,6 +45,9 @@ export const techStackList = [
   { id: 5, icon: <ReactIcon />, label: "React" },
   { id: 6, icon: <NextIcon />, label: "Next.js" },
   { id: 7, icon: <TailwindIcon />, label: "TailwindCSS" },
+  { id: 8, icon: <ExpressJSIcon />, label: "Express.js" },
+  { id: 9, icon: <MongoDBIcon />, label: "MongoDB" },
+  { id: 10, icon: <ReduxTKIcon />, label: "Redux Toolkit" },
 ];
 
 export const learningStack = [{ id: 1, icon: <AWSIcon />, label: "AWS" }];
@@ -78,7 +84,7 @@ export const projectsList = [
             needs.
           </p>
 
-          <div className="border-l-2 pl-5 text-sm flex flex-col gap-5 my-5">
+          <div className="border-l-2 pl-5 text-xs flex flex-col gap-5 my-5">
             <div>
               <b>Problem/Opportunity:</b>
               <p>
@@ -149,14 +155,14 @@ export const projectsList = [
         <div className="flex flex-col gap-2 my-5">
           <p>
             Nova Performance, an independent gym business, barbell club, and a
-            respected strength sports facility. This volunteer project allowed
-            me to collaborate with the gym owner to redesign and redevelop their
+            respected strength sports facility. This project allowed me to
+            collaborate with the gym owner to redesign and redevelop their
             website. You can{" "}
             <OriginalWebsiteLink>
               view the original site here
             </OriginalWebsiteLink>
           </p>
-          <div className="border-l-2 pl-5 text-sm flex flex-col gap-5 my-5">
+          <div className="border-l-2 pl-5 text-xs flex flex-col gap-5 my-5">
             <div>
               <b>Problem/Opportunity:</b>
               <p>
@@ -175,16 +181,13 @@ export const projectsList = [
               <b>Solution:</b>
               <ul>
                 <li>
-                  • A responsive design that adapts seamlessly across desktop,
-                  tablet, and mobile devices, improving accessibility and
-                  usability.
+                  • A responsive design, improving accessibility and usability.
                 </li>
                 <li>
                   • Faster loading time by implementing performance
-                  optimisation, using Next.js for server-side rendering and
-                  static site generation. These methods reduced initial page
-                  load times, improved SEO, and ensured users experienced smooth
-                  transitions between pages.
+                  optimisation, reduced initial page load times, improved SEO,
+                  and ensured users experienced smooth transitions between
+                  pages.
                 </li>
               </ul>
             </div>
@@ -196,10 +199,7 @@ export const projectsList = [
                   • Modernised design and smoother navigation improved user
                   experience and accessibility.
                 </li>{" "}
-                <li>
-                  • Enhanced branding with a professional, cohesive design
-                  aligned to the gym's identity.
-                </li>{" "}
+                <li>• Enhanced branding that aligns to the gym's identity.</li>{" "}
                 <li>
                   • Delivered a client-aligned website with clear communication
                   all throughout and managed expectations.
@@ -233,7 +233,7 @@ export const projectsList = [
             Solace Furnitures is a modern ecommerce platform designed to provide
             a great shopping experience for furniture enthusiasts.
           </p>
-          <div className="border-l-2 pl-5 text-sm flex flex-col gap-5 my-5">
+          <div className="border-l-2 pl-5 text-xs flex flex-col gap-5 my-5">
             <div>
               <b>Problem/Opportunity:</b>
               <p>
@@ -257,13 +257,11 @@ export const projectsList = [
                 <li>
                   • Integrated React Query and Axios to fetch product data
                   dynamically and handle API calls effectively, improving
-                  performance and reducing re-renders and number of requests
-                  through caching.
+                  performance through caching.
                 </li>
                 <li>
                   • Used React Router DOM to implement smooth navigation between
-                  different pages without reloading, creating a faster and more
-                  fluid user experience.
+                  different pages.
                 </li>
               </ul>
             </div>
@@ -372,7 +370,7 @@ export const projectsList = [
             demonstrating my skills to create visually appealing and functional
             web applications.
           </p>
-          <div className="border-l-2 pl-5 text-sm flex flex-col gap-5 my-5">
+          <div className="border-l-2 pl-5 text-xs flex flex-col gap-5 my-5">
             <div>
               <b>Problem/Opportunity:</b>
               <p>
@@ -390,10 +388,6 @@ export const projectsList = [
             <div>
               <b>Solution:</b>
               <ul>
-                <li>
-                  • Built using React and TailwindCSS to ensure a highly
-                  responsive and visually polished design.
-                </li>
                 <li>
                   • Enhanced interactivity with animations and transitions using
                   by Framer Motion, creating a unique user experience.
@@ -456,7 +450,7 @@ export const projectsContributions = [
             target="_blank"
             noopener
             noreferrer
-            className="text-blue-700 font-bold"
+            className="text-blue-700 text-xs font-bold"
           >
             https://www.elwp.org.uk/
           </a>
@@ -529,7 +523,7 @@ export const projectsInProgress = [
             target="_blank"
             noopener
             noreferrer
-            className="text-blue-700 font-bold"
+            className="text-blue-700 text-xs font-bold"
           >
             Visit Facebook page
           </a>
@@ -564,7 +558,7 @@ export const projectsInProgress = [
               target="_blank"
               noopener
               noreferrer
-              className="text-blue-700 font-bold"
+              className="text-blue-700 text-xs font-bold"
             >
               Visit Instagram page
             </a>
@@ -574,7 +568,7 @@ export const projectsInProgress = [
               target="_blank"
               noopener
               noreferrer
-              className="text-blue-700 font-bold"
+              className="text-blue-700 text-xs font-bold"
             >
               Learn more about Jarvis
             </a>

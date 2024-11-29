@@ -11,7 +11,7 @@ export const Highlight = ({ children, delay = 0 }) => {
         whileInView={{ opacity: 1 }}
       >
         <motion.span
-          className="absolute inset-0 bg-yellow-300 -z-10"
+          className="absolute top-4 left-2 h-[50%] inset-0 bg-yellow-300 -z-10"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           transition={{ delay, duration: 0.6, ease: "easeOut" }}
@@ -51,7 +51,7 @@ const About = () => {
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className="text-5xl md:text-6xl lg:text-7xl text-center"
+              className="text-3xl text-center"
             >
               👋 Hi, I'm Josh.
             </motion.h1>
@@ -63,7 +63,7 @@ const About = () => {
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className="text-xl md:text-2xl lg:text-4xl font-light text-gray-700"
+              className="text-lg lg:text-xl font-light text-gray-700"
             >
               I'm a <Highlight delay="1">Frontend Web Developer</Highlight> with
               a background in Product Design. My{" "}
@@ -85,7 +85,7 @@ const About = () => {
                 className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
               >
                 <span
-                  className="text-2xl lg:text-lg"
+                  className="text-lg lg:text-sm"
                   aria-label="Learn more about me button"
                 >
                   Discover my journey
@@ -113,11 +113,11 @@ const About = () => {
                 duration: 1.5,
               }}
               viewport={{ once: true }}
-              className="text-xl lg:text-xl mb-4"
+              className="text-sm mb-4"
             >
               I've built projects using:
             </motion.h3>
-            <ul className="flex flex-row gap-10 flex-wrap justify-center">
+            <ul className="flex flex-row gap-7 flex-wrap justify-center">
               {techStackList.map((item, i) => {
                 const { id, icon, label } = item;
                 return (
@@ -126,8 +126,8 @@ const About = () => {
                     ref={(el) => (ref.current[i] = el)}
                     className="flex flex-col justify-center items-center opacity-0"
                   >
-                    {icon}
-                    <small className="text-sm">{label}</small>
+                    <p className="text-5xl">{icon}</p>
+                    <small className="text-xs">{label}</small>
                   </li>
                 );
               })}

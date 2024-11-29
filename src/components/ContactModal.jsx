@@ -48,7 +48,8 @@ const ContactModal = () => {
     <>
       <button
         onClick={() => document.getElementById("my_modal_2").showModal()}
-        className="hover:text-yellow-500 transition-all 2s ease" aria-label="Open"
+        className="hover:text-yellow-500 transition-all 2s ease text-sm lg:text-md"
+        aria-label="Open"
       >
         Drop me a message
       </button>

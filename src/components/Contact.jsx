@@ -19,18 +19,19 @@ const Contact = () => {
     return daysOfWeek[now.getDay()];
   };
 
-  const hoverStyles = "hover:text-yellow-500 transition-all 2s ease";
+  const hoverStyles =
+    "hover:text-yellow-500 text-sm lg:text-md transition-all 2s ease";
 
   return (
     <div className="h-full py-10 bg-black text-white">
       <div className="flex flex-col gap-10 align-elements">
-        <h1 className="text-xl font-bold">
+        <h1 className="text-md font-bold">
           Thank you for your time and consideration! I hope you enjoy the rest
           of your
           {` ${getDayOfWeek()} ${hours}!`}
         </h1>
 
-        <h1 className="text-center text-2xl font-bold">Get in touch!</h1>
+        <h1 className="text-center text-md font-bold">Get in touch!</h1>
         <div className="flex justify-center items-center gap-8 text-xl">
           <ContactModal />
           {contactLinks.map((item) => {

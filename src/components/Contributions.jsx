@@ -3,10 +3,12 @@ import { projectsContributions } from "../constants/lists";
 const Contributions = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 align-elements pb-20 border-b-2 border-neutral-300  py-20 my-20">
+      <div className="flex flex-col gap-10 align-elements pb-20 border-b-2 border-neutral-300  my-20">
         <div className="text-center">
-          <h1 className="text-3xl font-bold">Project Contributions</h1>
-          <p>Below are some other projects I have contributed to</p>
+          <h1 className="text-2xl font-bold">Project Contributions</h1>
+          <p className="text-xs">
+            Below are some other projects I have contributed to
+          </p>
         </div>
 
         <div>
@@ -18,9 +20,9 @@ const Contributions = () => {
                   {year}
                 </h3>
                 <div className="border-l-2 pl-5">
-                  <h1 className="text-xl font-bold">{title}</h1>
+                  <h1 className="text-xl font-semibold">{title}</h1>
                   <small className="text-neutral-500">{type}</small>
-                  <p className="mt-5">{description}</p>
+                  <p className="mt-5 text-xs text-justify">{description}</p>
                 </div>
               </div>
             );

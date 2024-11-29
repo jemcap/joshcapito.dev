@@ -10,26 +10,30 @@ const Navlinks = () => {
         const { id, url, label } = link;
         return (
           <li key={id}>
-            {label === "my work" ? (
+            {label === "PROJECTS" ? (
               <button
                 type="button"
                 onClick={scrollToProjects}
-                className="hover:underline"
+                className="hover:underline text-xs"
                 aria-label="Scroll to Projects section"
               >
                 {label}
               </button>
-            ) : label === "contact" ? (
+            ) : label === "CONTACT" ? (
               <button
                 type="button"
                 onClick={scrollToContact}
-                className="hover:underline"
+                className="hover:underline text-xs"
                 aria-label="Scroll to Contact section"
               >
                 {label}
               </button>
             ) : (
-              <Link to={url} className="hover:underline" aria-label={label}>
+              <Link
+                to={url}
+                className="hover:underline text-xs"
+                aria-label={label}
+              >
                 {label}
               </Link>
             )}

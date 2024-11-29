@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { HiArrowLongDown } from "react-icons/hi2";
 
-import jcapImg from "../assets/capito_j_portrait.png";
 import { socialMediaIcons } from "../constants/lists";
 import { useRef, useEffect } from "react";
 import { useGlobalContext } from "../context/context";
@@ -28,24 +27,17 @@ const Introduction = () => {
   const totalDuration = 1.25 + (text.length - 1) / 5.5;
   return (
     <div className="flex flex-col h-full justify-center items-center min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-slate-100 to-white">
-      <div className="text-center w-11/12 max-w-7xl  text-4xl sm:text-6xl md:text-8xl lg:text-9xl gap-2 mt-36">
+      <div className="text-center w-11/12 max-w-7xl  text-4xl gap-2 mt-36">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: totalDuration }}
         >
           <div className="flex flex-col font-light justify-center items-center">
-            <div className="flex flex-col items-center lg:flex-row gap-6 max-lg:mb-8">
-              <img
-                src={jcapImg}
-                alt=""
-                className="rounded-full w-10 lg:w-14 lg:h-14"
-              />
-              <div className="flex flex-col text-center lg:text-start">
-                <span className="text-sm md:text-lg lg:text-xl">
-                  portfolio curated by
-                </span>
-                <span className="text-sm md:text-lg lg:text-3xl text-start">
+            <div className="flex flex-col items-center lg:flex-row gap-6 max-lg:mb-8 lg:mb-8 ">
+              <div className="flex flex-col text-center">
+                <span className="text-sm lg:text-sm">web developer</span>
+                <span className="text-sm lg:text-lg">
                   joshua emmanuel capito
                 </span>
               </div>
@@ -62,7 +54,7 @@ const Introduction = () => {
                 duration: 0.5,
                 delay: i / 3,
               }}
-              className="text-5xl md:text-7xl lg:text-8xl"
+              className="text-2xl lg:text-5xl"
             >
               {el}{" "}
             </motion.span>
@@ -75,7 +67,7 @@ const Introduction = () => {
               <li
                 key={id}
                 ref={(el) => (socialRef.current[i] = el)}
-                className="flex flex-col justify-center items-center opacity-0 hover:text-yellow-500 text-4xl "
+                className="flex flex-col justify-center items-center opacity-0 hover:text-yellow-500 text-2xl "
               >
                 <a
                   href={url}

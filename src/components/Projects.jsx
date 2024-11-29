@@ -9,8 +9,10 @@ const Projects = () => {
     <section className=" h-full py-20">
       <div className="flex flex-col gap-10 align-elements  pb-20">
         <div className="text-center">
-          <h1 className=" text-3xl font-bold">Featured Projects</h1>
-          <p>Check out some of my projects I've done below</p>
+          <h1 className=" text-2xl font-bold">Featured Projects</h1>
+          <p className="text-xs">
+            Check out some of my projects I've done below
+          </p>
         </div>
         <div className="grid grid-cols-1 gap-12 ">
           {projectsList.map((project) => {
@@ -38,14 +40,16 @@ const Projects = () => {
                 </figure>
                 <div className="card-body flex-1 max-lg:gap-8">
                   <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start sm:items-center">
-                    <h2 className="card-title text-2xl max-sm:text-3xl">
+                    <h2 className="card-title text-xl max-sm:text-2xl">
                       {title}
                     </h2>
-                    <small className="border-2 sm:border-4 border-indigo-200 border-b-indigo-500 flex items-center p-1 sm:p-2 rounded-xl text-xs sm:text-sm">
+                    <small className="border-2 sm:border-4 border-indigo-200 border-b-indigo-500 flex items-center p-1 rounded-xl text-xs">
                       {type}
                     </small>
                   </div>
-                  <p className="text-start max-md:text-lg">{description}</p>
+                  <p className="text-start text-xs max-sm:text-xs">
+                    {description}
+                  </p>
                   <p className="text-start">
                     <ul className="flex gap-2 flex-wrap mb-7">
                       {stack.map((item) => {
@@ -53,7 +57,7 @@ const Projects = () => {
                         return (
                           <li
                             key={id}
-                            className="border-4 border-pink-200 border-b-pink-500 flex items-center p-1 rounded-xl"
+                            className="border-4 text-pink-800 border-pink-200 border-b-pink-500 flex items-center p-1 rounded-xl text-xs"
                           >
                             {label}
                           </li>
@@ -71,8 +75,10 @@ const Projects = () => {
                         className="border-4 py-1 lg:py-2 px-4 lg:px-5 border-black rounded-full w-full sm:w-auto"
                       >
                         <div className="flex justify-center items-center text-xs max-sm:text-xl">
-                          <GithubIcon className="text-lg sm:text-xl" />
-                          <span className="ml-2">GitHub repository</span>
+                          <GithubIcon className="text-lg sm:text-sm" />
+                          <span className="ml-2 text-sm">
+                            GitHub repository
+                          </span>
                         </div>
                       </a>
                       <a
@@ -81,7 +87,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className="bg-black py-2 lg:py-3 px-4 lg:px-5 rounded-full text-white w-full sm:w-auto"
                       >
-                        <div className="w-auto flex justify-center items-center text-xs max-sm:text-xl">
+                        <div className="w-auto flex justify-center items-center text-xs max-sm:text-sm">
                           <span className="flex items-center">
                             Visit site
                             <svg

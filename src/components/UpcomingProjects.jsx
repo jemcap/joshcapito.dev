@@ -5,8 +5,10 @@ const UpcomingProjects = () => {
     <>
       <div className="flex flex-col gap-10 align-elements pb-20 border-b-2 border-neutral-300 border-t-2 border-t-neutral-300 py-20 my-20">
         <div className="text-center">
-          <h1 className="text-3xl font-bold">Projects in Progress</h1>
-          <p>Here are some exciting projects I'm currently building</p>
+          <h1 className="text-2xl font-bold">Projects in Progress</h1>
+          <p className="text-xs">
+            Here are some exciting projects I'm currently building
+          </p>
         </div>
         <div>
           {projectsInProgress.map((project) => {
@@ -16,9 +18,9 @@ const UpcomingProjects = () => {
                 key={id}
                 className="text-start md:mx-20 my-20 border-l-2 pl-5"
               >
-                <h1 className="text-xl font-bold">{title}</h1>
+                <h1 className="text-xl font-semibold">{title}</h1>
                 <small className="text-neutral-500">{type}</small>
-                <p className="mt-5 text-justify">{description}</p>
+                <p className="mt-5 text-justify text-xs">{description}</p>
               </div>
             );
           })}
@@ -32,7 +34,7 @@ const UpcomingProjects = () => {
             className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
           >
             <span
-              className="text-2xl lg:text-lg"
+              className="text-xl lg:text-sm"
               aria-label="View GitHub Projects button"
             >
               View More Projects
