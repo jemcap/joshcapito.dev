@@ -76,7 +76,7 @@ const Projects = () => {
                       >
                         <div className="flex justify-center items-center text-xs max-sm:text-xl">
                           <GithubIcon className="text-lg sm:text-sm" />
-                          <span className="ml-2 text-sm">
+                          <span className="ml-2 text-xs">
                             GitHub repository
                           </span>
                         </div>
@@ -88,7 +88,7 @@ const Projects = () => {
                         className="bg-black py-2 lg:py-3 px-4 lg:px-5 rounded-full text-white w-full sm:w-auto"
                       >
                         <div className="w-auto flex justify-center items-center text-xs max-sm:text-sm">
-                          <span className="flex items-center">
+                          <span className="flex items-center text-xs">
                             Visit site
                             <svg
                               fill="none"
