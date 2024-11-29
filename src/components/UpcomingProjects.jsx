@@ -3,10 +3,10 @@ import { projectsInProgress } from "../constants/lists";
 const UpcomingProjects = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 align-elements pb-20 max-w-xl border-b-2 border-neutral-300 border-t-2 border-t-neutral-300 py-20 my-20">
+      <div className="flex flex-col gap-10 align-elements pb-20 border-b-2 border-neutral-300 border-t-2 border-t-neutral-300 py-20 my-20">
         <div className="text-center">
           <h1 className="text-3xl font-bold">Projects in Progress</h1>
-          <p>Here are some projects I'm currently building</p>
+          <p>Here are some exciting projects I'm currently building</p>
         </div>
         <div>
           {projectsInProgress.map((project) => {
@@ -14,11 +14,11 @@ const UpcomingProjects = () => {
             return (
               <div
                 key={id}
-                className="border-b-2 border-b-slate-100 text-start py-10"
+                className="text-start md:mx-20 my-20 border-l-2 pl-5"
               >
                 <h1 className="text-xl font-bold">{title}</h1>
                 <small className="text-neutral-500">{type}</small>
-                <p className="mt-5 border-l-2 pl-5">{description}</p>
+                <p className="mt-5 text-justify">{description}</p>
               </div>
             );
           })}

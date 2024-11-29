@@ -444,20 +444,24 @@ export const projectsContributions = [
     type: "Volunteering",
     year: "2024/2025",
     description: (
-      <p>
-        Volunteered as a Web Developer to contribute to a community-led working
-        circle who are working on coordinating content and infrastructure for
-        the East London Waterworks Park website:{" "}
-        <a
-          href="https://www.elwp.org.uk/"
-          target="_blank"
-          noopener
-          noreferrer
-          className="text-blue-500"
-        >
-          https://www.elwp.org.uk/
-        </a>
-      </p>
+      <>
+        <div className="flex flex-col gap-5">
+          <p>
+            Volunteered as a Web Developer to contribute to a community-led
+            working circle who are working on coordinating content and
+            infrastructure for the East London Waterworks Park website:
+          </p>
+          <a
+            href="https://www.elwp.org.uk/"
+            target="_blank"
+            noopener
+            noreferrer
+            className="text-blue-700 font-bold"
+          >
+            https://www.elwp.org.uk/
+          </a>
+        </div>
+      </>
     ),
   },
   {
@@ -508,8 +512,76 @@ export const projectsInProgress = [
     id: uuidv4(),
     title: "Edison's Barber Shop",
     type: "Client Project",
-    description:
-      "I reached out to Edison, the owner of Edison's Barber Shop, to design and develop a professional, user-friendly website that showcases his services, reflects the shop's welcoming vibe, and helps attract more customers while building professionalism and trust. While Edison currently advertises through a Facebook page, not everyone uses Facebook, so creating a website would significantly expand his reach to potential customers.",
+    description: (
+      <>
+        <div className="flex flex-col gap-5">
+          <p>
+            I reached out to Edison, the owner of Edison's Barber Shop, to
+            design and develop a professional, user-friendly website that
+            showcases his services, reflects the shop's welcoming vibe, and
+            helps attract more customers while building professionalism and
+            trust. While Edison currently advertises through a Facebook page,
+            not everyone uses Facebook, so creating a website would
+            significantly expand his reach to potential customers.
+          </p>
+          <a
+            href="https://www.facebook.com/profile.php?id=100063643806492"
+            target="_blank"
+            noopener
+            noreferrer
+            className="text-blue-700 font-bold"
+          >
+            Visit Facebook page
+          </a>
+        </div>
+      </>
+    ),
+  },
+  {
+    id: uuidv4(),
+    title: "Sole Secured",
+    type: "Client Project",
+    description: (
+      <>
+        <div className="flex flex-col">
+          <p>
+            I connected with Jarvis, the owner of Sole Secured, to design and
+            develop a website that reflects his passion for sneakers. Sole
+            Secured has built a loyal following on Instagram, showcasing
+            Jarvis's craftsmanship and unique approach to sneaker culture.
+            However, not everyone uses Instagram, and a professional website
+            would help broaden his reach, attract new customers, and establish
+            Sole Secured as the go-to destination for sneaker care and
+            restoration. The website would highlight his services, share his
+            story, and allow customers to easily book services or inquire about
+            bespoke sneaker solutions, reinforcing his brand's professionalism
+            and credibility.
+          </p>
+          <div className="flex flex-col gap-5 my-8 lg:my-5 lg:gap-2">
+            <a
+              href="https://www.instagram.com/sole.secured/?hl=en-gb"
+              aria-label="Sole Secured link"
+              target="_blank"
+              noopener
+              noreferrer
+              className="text-blue-700 font-bold"
+            >
+              Visit Instagram page
+            </a>
+            <a
+              href="https://www.offspring.co.uk/theplatform/community/offspring-meets-jahbong?fbclid=PAZXh0bgNhZW0CMTEAAaZPOek-ZBoPJPmb7wa7ySBC0bSyv6rf7O96jP6bfOT17begQQo-VnRsuEA_aem_GnfhUonJc-opwCFqxxOCUA"
+              aria-label="link to know more about Jarvis"
+              target="_blank"
+              noopener
+              noreferrer
+              className="text-blue-700 font-bold"
+            >
+              Learn more about Jarvis
+            </a>
+          </div>
+        </div>
+      </>
+    ),
   },
 ];
 

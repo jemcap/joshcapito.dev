@@ -3,7 +3,7 @@ import { projectsContributions } from "../constants/lists";
 const Contributions = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 align-elements pb-20 max-w-xl">
+      <div className="flex flex-col gap-10 align-elements pb-20 border-b-2 border-neutral-300  py-20 my-20">
         <div className="text-center">
           <h1 className="text-3xl font-bold">Project Contributions</h1>
           <p>Below are some other projects I have contributed to</p>
@@ -13,10 +13,7 @@ const Contributions = () => {
           {projectsContributions.map((project) => {
             const { id, title, type, year, description } = project;
             return (
-              <div
-                key={id}
-                className="border-b-2 border-b-slate-100 text-start py-10"
-              >
+              <div key={id} className="text-start md:mx-20 my-20">
                 <h3 className="text-xl font-semibold text-start underline mb-10">
                   {year}
                 </h3>
