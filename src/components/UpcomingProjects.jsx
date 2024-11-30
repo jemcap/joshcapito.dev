@@ -20,7 +20,7 @@ const UpcomingProjects = () => {
               >
                 <h1 className="text-xl font-semibold">{title}</h1>
                 <small className="text-neutral-500">{type}</small>
-                <p className="mt-5 text-justify text-xs">{description}</p>
+                <p className="mt-5 text-justify text-sm">{description}</p>
               </div>
             );
           })}

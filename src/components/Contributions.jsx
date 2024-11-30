@@ -22,7 +22,7 @@ const Contributions = () => {
                 <div className="border-l-2 pl-5">
                   <h1 className="text-xl font-semibold">{title}</h1>
                   <small className="text-neutral-500">{type}</small>
-                  <p className="mt-5 text-xs text-justify">{description}</p>
+                  <p className="mt-5 text-sm text-justify">{description}</p>
                 </div>
               </div>
             );

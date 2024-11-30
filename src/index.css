@@ -8,6 +8,14 @@
   font-family: "IBM Plex Mono", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.active {
+  color: #c64b8c;
+}
+
 @layer components {
   .align-elements {
     @apply mx-auto max-w-[1050px] px-8 text-center;
