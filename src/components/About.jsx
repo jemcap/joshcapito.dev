@@ -74,7 +74,7 @@ const About = () => {
                 viewport={{ once: true }}
                 className="text-sm lg:text-sm font-light text-start text-gray-700"
               >
-                I'm a <Highlight delay="1">Frontend Web Devedloper</Highlight>{" "}
+                I'm a <Highlight delay="1">Frontend Web Developer</Highlight>{" "}
                 with a background in Product Design. My{" "}
                 <Highlight delay="1.5">passion for UX/UI design</Highlight>{" "}
                 fuels my creativity and inspires me to create innovative coding
