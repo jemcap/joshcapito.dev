@@ -26,6 +26,7 @@ export const Highlight = ({ children, delay = 0 }) => {
   );
 };
 
+// TODO: Put code into modular components to improve maintainability
 const About = () => {
   const [isActive, setIsActive] = useState(null);
   const ref = useRef([]);
@@ -476,34 +477,6 @@ const About = () => {
           </main>
         </div>
       </div>
-      {/* <div className="flex flex-col justify-center text-5xl lg:text-7xl mt-20 mb-20">
-            <motion.h3
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{
-                duration: 1.5,
-              }}
-              viewport={{ once: true }}
-              className="text-sm mb-4"
-            >
-              I've built projects using:
-            </motion.h3>
-            <ul className="grid max-lg:grid-cols-5 max-lg:gap-5 lg:grid-cols-10 justify-center">
-              {techStackList.map((item, i) => {
-                const { id, icon, label } = item;
-                return (
-                  <li
-                    key={id}
-                    ref={(el) => (ref.current[i] = el)}
-                    className="flex flex-col justify-center items-center opacity-0"
-                  >
-                    <p className="text-5xl">{icon}</p>
-                    <small className="text-xs">{label}</small>
-                  </li>
-                );
-              })}
-            </ul>
-          </div> */}
     </>
   );
 };
