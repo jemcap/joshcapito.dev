@@ -63,7 +63,7 @@ const About = () => {
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className="text-lg lg:text-xl font-light text-gray-700"
+              className="text-md lg:text-xl font-light text-gray-700"
             >
               I'm a <Highlight delay="1">Frontend Web Developer</Highlight> with
               a background in Product Design. My{" "}
@@ -85,7 +85,7 @@ const About = () => {
                 className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
               >
                 <span
-                  className="text-lg lg:text-sm"
+                  className="text-sm"
                   aria-label="Learn more about me button"
                 >
                   Discover my journey
@@ -117,7 +117,7 @@ const About = () => {
             >
               I've built projects using:
             </motion.h3>
-            <ul className="flex flex-row gap-7 flex-wrap justify-center">
+            <ul className="grid max-lg:grid-cols-5 max-lg:gap-5 lg:grid-cols-10 justify-center">
               {techStackList.map((item, i) => {
                 const { id, icon, label } = item;
                 return (

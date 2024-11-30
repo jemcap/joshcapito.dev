@@ -33,10 +33,7 @@ const UpcomingProjects = () => {
             noreferrer
             className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
           >
-            <span
-              className="text-xl lg:text-sm"
-              aria-label="View GitHub Projects button"
-            >
+            <span className="text-sm" aria-label="View GitHub Projects button">
               View More Projects
             </span>
             <svg

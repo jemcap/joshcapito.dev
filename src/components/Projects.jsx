@@ -43,7 +43,7 @@ const Projects = () => {
                     <h2 className="card-title text-xl max-sm:text-2xl">
                       {title}
                     </h2>
-                    <small className="border-2 sm:border-4 border-indigo-200 border-b-indigo-500 flex items-center p-1 rounded-xl text-xs">
+                    <small className="border-2 sm:border-4 text-indigo-700 bg-indigo-100 border-indigo-200 border-b-indigo-300 flex items-center p-1 rounded-xl text-xs">
                       {type}
                     </small>
                   </div>
@@ -57,7 +57,7 @@ const Projects = () => {
                         return (
                           <li
                             key={id}
-                            className="border-4 text-pink-800 border-pink-200 border-b-pink-500 flex items-center p-1 rounded-xl text-xs"
+                            className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs"
                           >
                             {label}
                           </li>
@@ -76,7 +76,7 @@ const Projects = () => {
                       >
                         <div className="flex justify-center items-center text-xs max-sm:text-xl">
                           <GithubIcon className="text-lg sm:text-sm" />
-                          <span className="ml-2 text-xs">
+                          <span className="ml-2 text-sm">
                             GitHub repository
                           </span>
                         </div>
@@ -88,7 +88,7 @@ const Projects = () => {
                         className="bg-black py-2 lg:py-3 px-4 lg:px-5 rounded-full text-white w-full sm:w-auto"
                       >
                         <div className="w-auto flex justify-center items-center text-xs max-sm:text-sm">
-                          <span className="flex items-center text-xs">
+                          <span className="flex items-center text-sm">
                             Visit site
                             <svg
                               fill="none"
