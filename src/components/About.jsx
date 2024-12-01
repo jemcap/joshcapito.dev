@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { learningStack, techStackList } from "../constants/lists";
+import {
+  aboutInfo,
+  experienceInfo,
+  learningStack,
+  techStackList,
+} from "../constants/lists";
 
 export const Highlight = ({ children, delay = 0 }) => {
   return (
@@ -26,7 +31,6 @@ export const Highlight = ({ children, delay = 0 }) => {
   );
 };
 
-// TODO: Put code into modular components to improve maintainability
 const About = () => {
   const [isActive, setIsActive] = useState(null);
   const ref = useRef([]);
@@ -107,7 +111,7 @@ const About = () => {
               <div className="lg:border-t-2 pt-10 flex">
                 <a
                   href="#bottom"
-                  className="text-sm max-lg:bg-black max-lg:text-white max-lg:py-1 max-lg:px-2.5 max-lg:rounded-lg"
+                  className="text-sm max-lg:bg-black max-lg:text-white max-lg:py-1 max-lg:px-4 max-lg:rounded-xl"
                 >
                   skip
                 </a>
@@ -116,122 +120,41 @@ const About = () => {
           </div>
 
           <main id="content" className="pt-24 lg:w-1/2 lg:py-36">
-            <section
-              id="about-me"
-              className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-            >
-              <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  duration: 0.7,
-                  ease: "easeOut",
-                }}
-                viewport={{ once: true }}
-                className="flex flex-col gap-5 text-sm lg:text-sm font-light text-start text-gray-700"
-              >
-                <div className="text-sm lg:text-sm flex flex-col gap-8 text-gray-700 font-light">
-                  <h1 className="font-semibold text-lg lg:hidden">About me</h1>
-                  <p>
-                    {" "}
-                    I love working at the intersection of design, development,
-                    and cutting-edge technology. For me, digital experiences
-                    aren't just functional; they should be intuitive, visually
-                    striking, and engage users in a way that excites them. It's
-                    incredibly rewarding to transform an idea into something
-                    tangible—whether it's designing an intuitive interface or
-                    writing seamless code. Every interaction should be
-                    meaningful and resonate with users, making their experience
-                    easier, more enjoyable, and a bit brighter. That's what
-                    drives me.{" "}
-                  </p>{" "}
-                  <p>
-                    {" "}
-                    Blending creativity with technology, particularly in digital
-                    media, has always been my passion. I thrive on solving
-                    complex problems through code and crafting interfaces that
-                    elevate the user experience. The thrill of bringing
-                    innovative ideas to life and making a meaningful impact
-                    fuels my drive to continuously push boundaries and grow
-                    creatively.{" "}
-                  </p>{" "}
-                  <p>
-                    I've had opportunities to work on a variety of projects,
-                    contributing to development efforts for different
-                    organisations along the way. Right now, I help small, local
-                    businesses grow by designing and building bespoke websites
-                    that really support their online presence.
-                  </p>
-                  <p>
-                    {" "}
-                    Outside of work, I explore my creative passions, including
-                    cinematography, photography, and playing the piano or
-                    guitar. I'm also a powerlifter, so you might catch me at the
-                    gym. Lately, I've been trying to read more, so if you're a
-                    fellow bookworm, feel free to connect!{" "}
-                  </p>
-                </div>
-              </motion.div>
-            </section>
-            <section
-              id="my-story"
-              className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-            >
-              <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  duration: 0.7,
-                  ease: "easeOut",
-                }}
-                viewport={{ once: true }}
-                className="flex flex-col gap-5 text-sm lg:text-sm font-light text-start text-gray-700"
-              >
-                <div className="text-sm lg:text-sm flex flex-col gap-8 text-gray-700 font-light">
-                  <h1 className="font-semibold text-lg lg:hidden">My Story</h1>
-                  <p>
-                    I've always been deeply passionate about technology and its
-                    transformative power. During my four years studying Product
-                    Design at <span>Nottingham Trent University</span>, I gained
-                    hands-on experience with a range of technologies—from
-                    Computer-Aided Design and Manufacturing to 3D printing—and
-                    software tools like Adobe Creative Cloud.
-                  </p>
-                  <p>
-                    When COVID-19 hit, it disrupted my placement year, making it
-                    difficult to secure a role. This uncertainty gave me the
-                    chance to explore new skills, and I quickly became
-                    passionate about Web Design and Development, spending hours
-                    building simple HTML and CSS websites. I knew I wanted to
-                    pursue a career in this field.
-                  </p>
-                  <p>
-                    In my final year, I led the website team for{" "}
-                    <span>
-                      Nottingham Trent University Design Industries (NTUDI)
-                    </span>
-                    , where I helped design a platform showcasing the work of
-                    our final-year students. It was incredibly rewarding to see
-                    it go live and be used by the design community.
-                  </p>
-                  <p>
-                    After graduation, I made the switch to web development. With
-                    no prior experience, I immersed myself in learning the
-                    fundamentals, building my skills from the ground up. My
-                    passion for technology and creating user-centered
-                    experiences drives me to keep pushing forward, one line of
-                    code at a time.
-                  </p>
-                </div>
-              </motion.div>
-            </section>
+            {aboutInfo.map((info) => {
+              const { id, title, link, content } = info;
+              return (
+                <section
+                  key={id}
+                  id={link}
+                  className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                >
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.7,
+                      ease: "easeOut",
+                    }}
+                    viewport={{ once: true }}
+                    className="flex flex-col gap-5 text-sm lg:text-sm font-light text-start text-gray-700"
+                  >
+                    <div className="text-sm lg:text-sm flex flex-col gap-8 text-gray-700 font-light">
+                      <h1 className="font-semibold text-lg lg:hidden">
+                        {title}
+                      </h1>
+                      {content}
+                    </div>
+                  </motion.div>
+                </section>
+              );
+            })}
             <section
               id="experience"
               className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
             >
               <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 transition={{
                   duration: 0.7,
                   ease: "easeOut",
@@ -240,229 +163,47 @@ const About = () => {
                 className="flex flex-col gap-20 text-sm lg:text-sm font-light text-start text-gray-700 "
               >
                 <div className="text-sm lg:text-sm text-gray-700 font-light">
-                  <div className="flex flex-col lg:flex-row">
-                    <h1 className="font-semibold text-lg lg:hidden pb-5">
-                      My Experience
-                    </h1>
-                    <div className="lg:w-1/3 w-full">
-                      <small className="">Jul 2024—Present</small>
-                    </div>
-
-                    <div className="flex flex-col lg:w-2/3 w-full gap-8 ">
-                      <div>
-                        <h1 className="font-bold text-lg">
-                          Independent Web Developer (Pro Bono projects)
-                        </h1>
-                        <small>
-                          Volunteer Web Developer for local and small businesses
-                        </small>
-                      </div>
-                      <p>
-                        I reach out to small and local businesses, collaborating
-                        closely with business owners to understand their
-                        requirements and deliver tailored solutions that aligned
-                        with their goals. By taking on these pro bono projects,
-                        I expand my technical expertise and contributed to the
-                        growth of small businesses in my community.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="text-sm lg:text-sm text-gray-700 font-light">
-                  <div className="flex flex-col lg:flex-row">
-                    <div className="lg:w-1/3 w-full">
-                      <small className="">Nov 2024—Present</small>
-                    </div>
-
-                    <div className="flex flex-col lg:w-2/3 w-full gap-8">
-                      <div>
-                        <h1 className="font-bold text-lg">
-                          East London Waterworks Park
-                        </h1>
-                        <small>Front End Web Developer Volunteer</small>
-                      </div>
-                      <p>
-                        Volunteered as a Web Dev to contribute to a
-                        community-led working circle who are working on
-                        coordinating content and infrastructure for the East
-                        London Waterworks Park website. The goal for this
-                        initiative is by purchasing land and transforming it
-                        into a biodiverse park that benefits the general public
-                        and the planet.
-                      </p>
-                      <ul className="flex gap-2 flex-wrap mb-7">
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          PHP
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          MySQL
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          Apache Web Server
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          JavaScript
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="text-sm lg:text-sm  text-gray-700 font-light">
-                  <div className="flex flex-col lg:flex-row">
-                    <div className="lg:w-1/3 w-full">
-                      <small>Nov 2022-May 2024</small>
-                    </div>
-                    <div className="flex flex-col lg:w-2/3 w-full gap-8">
-                      <div className="flex flex-col">
-                        <h1 className="font-bold text-lg">dcloud9 ltd.</h1>
-                        <small className="italic">
-                          In collaboration with our client:{" "}
-                          <a
-                            href="https://www.iavi.org/"
-                            className="text-semibold text-gray-900"
-                          >
-                            IAVI
-                          </a>
-                        </small>
-                        <small>Junior DevOps Engineer</small>
-                      </div>
-                      <p>
-                        I worked on the MAGY project for IAVI, developing
-                        backend APIs with Python and GraphQL, optimising data
-                        management and code iterations using AWS Lambda, and
-                        integrating AppSync with DynamoDB. I automated
-                        infrastructure processes using Terraform, improving
-                        deployment efficiency, and collaborated in Agile sprints
-                        to enhance team productivity and problem-solving.
-                      </p>
-                      <ul className="flex gap-2 flex-wrap mb-7">
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          Amazon Web Services
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          Terraform
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          Gitlab CI/CD
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          Python
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          GraphQL
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="text-sm lg:text-sm  text-gray-700 font-light">
-                  <div className="flex flex-col lg:flex-row">
-                    <div className="lg:w-1/3 w-full">
-                      <small>Sep 2023—Dec 2023</small>
-                    </div>
-                    <div className="flex flex-col lg:w-2/3 w-full gap-8">
-                      <div>
-                        <h1 className="font-bold text-lg">PolicyCON ltd.</h1>
-                        <small>Front End Web Developer Intern</small>
-                      </div>
-                      <p>
-                        Redesigned webpages to enhance UX/UI and accessibility,
-                        developing responsive features with React, TypeScript,
-                        and TailwindCSS for improved performance. Refactored the
-                        codebase for maintainability using modular design,
-                        authored technical documentation for future development,
-                        and tested authentication components with Cypress to
-                        boost reliability. Actively participated in Scrum
-                        meetings, aligning goals and ensuring deliverables.
-                      </p>
-                      <ul className="flex gap-2 flex-wrap mb-7">
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          Figma
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          React
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          TypeScript
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          TailwindCSS
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          Cypress
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="text-sm lg:text-sm  text-gray-700 font-light">
-                  <div className="flex flex-col lg:flex-row">
-                    <div className="lg:w-1/3 w-full">
-                      <small>Sep 2021-May 2022</small>
-                    </div>
-                    <div className="flex flex-col lg:w-2/3 w-full gap-8">
-                      <div>
-                        <h1 className="font-bold text-lg">
-                          Nottingham Trent University Design Industries '22
-                        </h1>
-                        <small>Website Team Lead</small>
-                      </div>
-                      <p>
-                        Led a team of three to ensure timely website deployment
-                        by assigning tasks, resolving challenges, and achieving
-                        weekly goals. Collaborated with the Branding team to
-                        align designs with annual themes, creating cohesive and
-                        engaging layouts that improved user experience. Mentored
-                        team members in debugging, data handling, and UX/UI
-                        principles, boosting efficiency and meeting targets.
-                        Successfully managed the project alongside academic
-                        responsibilities, deploying the website on time.
-                        Optimised content for SEO, increasing website traffic by
-                        15% year over year.
-                      </p>
-                      <ul className="flex gap-2 flex-wrap mb-7">
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          Wix Website Builder
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          JavaScript
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="text-sm lg:text-sm  text-gray-700 font-light">
-                  <div className="flex flex-col lg:flex-row ">
-                    <div className="lg:w-1/3 w-full">
-                      <small>Aug 2021-Sep 2021</small>
-                    </div>
-                    <div className="flex flex-col lg:w-2/3 w-full gap-8">
-                      <div>
-                        <h1 className="font-bold text-lg">Unitemps</h1>
-                        <small>Website Designer</small>
-                      </div>
-                      <p>
-                        Worked as a Web Designer and Developer with NTU Masters
-                        Product Design students to create a virtual platform
-                        showcasing their work and profiles. Using Squarespace, I
-                        contributed in designing a professional and
-                        user-friendly website that effectively displayed their
-                        projects and achievements. I collaborated closely with
-                        the students to understand their creative goals,
-                        tailoring the platform to highlight their work while
-                        maintaining a cohesive and engaging design. The result
-                        was a polished showcase that helped them share their
-                        portfolios with prospective employers and collaborators.
-                      </p>
-                      <ul className="flex gap-2 flex-wrap mb-7">
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          Squarespace
-                        </li>
-                        <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
-                          Figma
-                        </li>
-                      </ul>
-                    </div>
+                  <h1 className="font-semibold text-lg lg:hidden pb-5">
+                    My Experience
+                  </h1>
+                  <div>
+                    {experienceInfo.map((info) => {
+                      const {
+                        id,
+                        date,
+                        company,
+                        role,
+                        description,
+                        stack,
+                        extra,
+                      } = info;
+                      return (
+                        <div className="flex flex-col lg:flex-row mb-20">
+                          <div className="lg:w-1/3 w-full">
+                            <small className="">{date}</small>
+                          </div>
+                          <div className="flex flex-col lg:w-2/3 w-full gap-8 ">
+                            <div className="flex flex-col">
+                              <h1 className="font-bold text-lg">{company}</h1>
+                              <small>{role}</small>
+                              {extra && <small>{extra}</small>}
+                            </div>
+                            <p>{description}</p>
+                            <ul className="flex gap-2 flex-wrap mb-7">
+                              {stack &&
+                                stack.map((list) => {
+                                  const { id, tech } = list;
+                                  return (
+                                    <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
+                                      {tech}
+                                    </li>
+                                  );
+                                })}
+                            </ul>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </motion.div>
