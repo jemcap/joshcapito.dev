@@ -54,7 +54,7 @@ const Introduction = () => {
                 duration: 0.5,
                 delay: i / 3,
               }}
-              className="text-5xl"
+              className="text-5xl font-semibold"
             >
               {el}{" "}
             </motion.span>

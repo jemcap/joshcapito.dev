@@ -97,6 +97,7 @@ const About = () => {
                   const { title, link } = section;
                   return (
                     <a
+                      key={section}
                       href={link}
                       className={isActive === i ? "text-sm active" : "text-sm"}
                       onClick={() =>
@@ -178,7 +179,10 @@ const About = () => {
                         extra,
                       } = info;
                       return (
-                        <div className="flex flex-col lg:flex-row mb-20">
+                        <div
+                          key={id}
+                          className="flex flex-col lg:flex-row mb-20"
+                        >
                           <div className="lg:w-1/3 w-full">
                             <small className="">{date}</small>
                           </div>
@@ -194,7 +198,10 @@ const About = () => {
                                 stack.map((list) => {
                                   const { id, tech } = list;
                                   return (
-                                    <li className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs">
+                                    <li
+                                      key={id}
+                                      className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 flex items-center p-1 rounded-xl text-xs"
+                                    >
                                       {tech}
                                     </li>
                                   );

@@ -583,7 +583,7 @@ export const aboutInfo = [
   {
     id: uuidv4(),
     title: "About",
-    link: "#about-me",
+    link: "about-me",
     content: (
       <>
         <p>
@@ -626,7 +626,7 @@ export const aboutInfo = [
   {
     id: uuidv4(),
     title: "My Story",
-    link: "#my-story",
+    link: "my-story",
     content: (
       <>
         <p>
