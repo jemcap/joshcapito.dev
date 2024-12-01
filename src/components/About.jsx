@@ -104,9 +104,12 @@ const About = () => {
                   );
                 })}
               </div>
-              <div className="border-t-2 pt-10 flex">
-                <a href="#bottom" className="text-sm">
-                  skip to bottom
+              <div className="lg:border-t-2 pt-10 flex">
+                <a
+                  href="#bottom"
+                  className="text-sm max-lg:bg-black max-lg:text-white max-lg:py-1 max-lg:px-2.5 max-lg:rounded-lg"
+                >
+                  skip
                 </a>
               </div>
             </section>
@@ -128,6 +131,7 @@ const About = () => {
                 className="flex flex-col gap-5 text-sm lg:text-sm font-light text-start text-gray-700"
               >
                 <div className="text-sm lg:text-sm flex flex-col gap-8 text-gray-700 font-light">
+                  <h1 className="font-semibold text-lg lg:hidden">About me</h1>
                   <p>
                     {" "}
                     I love working at the intersection of design, development,
@@ -152,7 +156,7 @@ const About = () => {
                     creatively.{" "}
                   </p>{" "}
                   <p>
-                    I've been lucky enough to work on a variety of projects,
+                    I've had opportunities to work on a variety of projects,
                     contributing to development efforts for different
                     organisations along the way. Right now, I help small, local
                     businesses grow by designing and building bespoke websites
@@ -184,6 +188,7 @@ const About = () => {
                 className="flex flex-col gap-5 text-sm lg:text-sm font-light text-start text-gray-700"
               >
                 <div className="text-sm lg:text-sm flex flex-col gap-8 text-gray-700 font-light">
+                  <h1 className="font-semibold text-lg lg:hidden">My Story</h1>
                   <p>
                     I've always been deeply passionate about technology and its
                     transformative power. During my four years studying Product
@@ -193,43 +198,29 @@ const About = () => {
                     software tools like Adobe Creative Cloud.
                   </p>
                   <p>
-                    When COVID-19 hit, everything came to a standstill.
-                    Unfortunately, the peak of the pandemic coincided with my
-                    studies, especially during my placement year. It became
-                    incredibly challenging to secure a role within the industry,
-                    and many academic projects were put on hold. It was a tough
-                    time, as the uncertainty left me with very little to do and
-                    a lot of plans in limbo. This allowed the opportunity to
-                    branch out and learn new skills. I chose Web Design and
-                    Development. After long hours of building very simple HTML
-                    and CSS websites, I instantly fell in love with it, and I
-                    knew this is something I would like to pursue, and develop
-                    my career in Web Development.
+                    When COVID-19 hit, it disrupted my placement year, making it
+                    difficult to secure a role. This uncertainty gave me the
+                    chance to explore new skills, and I quickly became
+                    passionate about Web Design and Development, spending hours
+                    building simple HTML and CSS websites. I knew I wanted to
+                    pursue a career in this field.
                   </p>
                   <p>
-                    During my final year as an undergraduate, I had the amazing
-                    opportunity to lead the website team for a student-led
-                    initiative called{" "}
+                    In my final year, I led the website team for{" "}
                     <span>
                       Nottingham Trent University Design Industries (NTUDI)
-                    </span>{" "}
-                    — where I am a proud alumnus of the '22 committee. I take
-                    pride in having helped design and develop a platform that
-                    showcased the innovative work of our final-year students,
-                    and it was incredibly rewarding to see it go live and be
-                    used by the wider design community.
+                    </span>
+                    , where I helped design a platform showcasing the work of
+                    our final-year students. It was incredibly rewarding to see
+                    it go live and be used by the design community.
                   </p>
                   <p>
-                    Following graduation, I took a leap of faith and made the
-                    switch to web development. With no prior experience, I dove
-                    in headfirst, eager to learn everything I could. Starting
-                    from the ground up, I dedicated myself to learning the
-                    fundamentals and gradually building my skills through simply
-                    just building. My passion for technology, combined with my
-                    desire to create meaningful, user-centered experiences,
-                    drove me to persist through challenges and setbacks. Every
-                    line of code I wrote was a step toward realising my goal of
-                    becoming a developer, and I embraced the journey.
+                    After graduation, I made the switch to web development. With
+                    no prior experience, I immersed myself in learning the
+                    fundamentals, building my skills from the ground up. My
+                    passion for technology and creating user-centered
+                    experiences drives me to keep pushing forward, one line of
+                    code at a time.
                   </p>
                 </div>
               </motion.div>
@@ -246,10 +237,13 @@ const About = () => {
                   ease: "easeOut",
                 }}
                 viewport={{ once: true }}
-                className="flex flex-col gap-20 text-sm lg:text-sm font-light text-start text-gray-700"
+                className="flex flex-col gap-20 text-sm lg:text-sm font-light text-start text-gray-700 "
               >
                 <div className="text-sm lg:text-sm text-gray-700 font-light">
                   <div className="flex flex-col lg:flex-row">
+                    <h1 className="font-semibold text-lg lg:hidden pb-5">
+                      My Experience
+                    </h1>
                     <div className="lg:w-1/3 w-full">
                       <small className="">Jul 2024—Present</small>
                     </div>
