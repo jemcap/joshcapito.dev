@@ -500,7 +500,7 @@ export const projectsInProgress = [
     title: "Vigor",
     type: "Startup Project",
     description:
-      "Recovery is essential in powerlifting to repair muscles, prevent injuries, and keep making progress. The app will serve as a digital platform for powerlifters to track and manage their injuries, receive recommendations for rehabilitation exercises and stretches, and monitor their recovery progress. Later down the line, it will also allow users to connect with physiotherapists and sports therapists for additional guidance, and allow to easily share updates in real-time.",
+      "Recovery is essential in powerlifting to repair muscles, prevent injuries, and keep making progress. The app will serve as a digital platform for powerlifters to track and manage their injuries, receive recommendations for rehabilitation exercises and stretches, and monitor their recovery progress. The application will also allow users to connect with Physiotherapists and Sports Therapists for additional guidance, and allow to easily share updates in real-time.",
   },
   {
     id: uuidv4(),
