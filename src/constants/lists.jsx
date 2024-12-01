@@ -497,10 +497,10 @@ export const projectsContributions = [
 export const projectsInProgress = [
   {
     id: uuidv4(),
-    title: "Powerlifting Recovery Helper",
-    type: "Personal Project",
+    title: "Vigor",
+    type: "Startup Project",
     description:
-      "Recovery is essential in powerlifting to repair muscles, prevent injuries, and keep making progress. An app could make this easier by offering personalised advice based on your training data, like how intense your sessions are and how you're feeling. It could track your sleep, nutrition, and hydration, and suggest things like rest days, stretches, or active recovery exercises. With added tools for mental wellness and progress tracking, it would give lifters a simple, effective way to stay on top of their recovery.",
+      "Recovery is essential in powerlifting to repair muscles, prevent injuries, and keep making progress. The app will serve as a digital platform for powerlifters to track and manage their injuries, receive recommendations for rehabilitation exercises and stretches, and monitor their recovery progress. Later down the line, it will also allow users to connect with physiotherapists and sports therapists for additional guidance, and allow to easily share updates in real-time.",
   },
   {
     id: uuidv4(),
