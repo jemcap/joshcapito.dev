@@ -23,6 +23,11 @@ import SolaceFurnitures from "../assets/solace_furnitures.png";
 import Sprintyper from "../assets/sprintyper.png";
 import BlockBuster from "../assets/blockbuster.png";
 import Portfolio from "../assets/online_portfolio.png";
+import MealMasterThumbnail from "../assets/meal_master_thumbnail.png";
+import NovaPerformanceThumbnail from "../assets/nova-performance-thumbnail.png";
+import SolaceFurnituresThumbnail from "../assets/solace_funitures_ecommerce_thumbnail.png";
+import SprintyperThumbnail from "../assets/sprintyper_thumbnail.png";
+import JoshCapitoDevThumbnail from "../assets/joshcapitodev_thumbnail.png";
 
 export const OriginalWebsiteLink = ({ children }) => {
   return (
@@ -69,9 +74,10 @@ export const socialMediaIcons = [
 
 export const projectsList = [
   {
-    id: uuidv4(),
+    id: "1",
     title: "Meal Master",
     type: "Group project",
+    thumbnail: MealMasterThumbnail,
     image: MealMasterImg,
     description: (
       <>
@@ -146,9 +152,10 @@ export const projectsList = [
     website: "https://mealmasterhelper.netlify.app/",
   },
   {
-    id: uuidv4(),
+    id: "2",
     title: "Nova Performance — Barbell Club",
     type: "Client project",
+    thumbnail: NovaPerformanceThumbnail,
     image: NovaPerformanceSite,
     description: (
       <>
@@ -222,9 +229,10 @@ export const projectsList = [
     website: "https://novaperformance.vercel.app/",
   },
   {
-    id: uuidv4(),
+    id: "3",
     title: "Solace Furnitures",
     type: "Exploration project",
+    thumbnail: SolaceFurnituresThumbnail,
     image: SolaceFurnitures,
     description: (
       <>
@@ -287,7 +295,7 @@ export const projectsList = [
     stack: [
       { id: 1, label: "React" },
       { id: 2, label: "TailwindCSS" },
-      { id: 3, label: "React Router DOM" },
+      { id: 3, label: "React Router" },
       { id: 4, label: "Redux Toolkit" },
       { id: 5, label: "React Query" },
       { id: 6, label: "Axios" },
@@ -295,21 +303,84 @@ export const projectsList = [
     github: "https://github.com/jemcap/solace-furniture/",
     website: "https://solacefurnitures.netlify.app/",
   },
-  // {
-  //   id: uuidv4(),
-  //   title: "Sprintyper",
-  //   type: "Game project",
-  //   image: Sprintyper,
-  //   description:
-  //     "Sprintyper is an innovative and engaging tool designed to help individuals improve their typing skills through practice and game-based learning. The platform features four distinct levels, each progressively increasing in complexity, challenging users to accurately type out phrases and sentences appropriate to their skill level.",
-  //   stack: [
-  //     { id: 1, label: "HTML5" },
-  //     { id: 2, label: "CSS3" },
-  //     { id: 3, label: "JavaScript" },
-  //   ],
-  //   github: "https://github.com/jemcap/speed-typer",
-  //   website: "https://speed-typer-tool.netlify.app/",
-  // },
+  {
+    id: "4",
+    title: "Sprintyper",
+    type: "Game project",
+    thumbnail: SprintyperThumbnail,
+    image: Sprintyper,
+    description: (
+      <>
+        <div className="flex flex-col gap-2 my-5">
+          <p>
+            Sprintyper is an interactive web-based game designed to enhance
+            typing speed and accuracy through engaging, game-based learning. The
+            platform offers users four distinct difficulty levels, each
+            presenting a new challenge to type out increasingly complex phrases
+            and sentences. This project blends education and entertainment,
+            providing a fun and effective way to improve typing skills.
+          </p>
+          <div className="border-l-2 pl-5 text-xs flex flex-col gap-5 my-5">
+            <div>
+              <b>Problem/Opportunity:</b>
+              <p>
+                The goal of this project was to create an interactive tool that
+                helps users practice typing in a fun, engaging way. With a focus
+                on game-based learning, Sprintyper was designed to motivate
+                users to improve their typing speed while keeping them
+                entertained. This opportunity allowed me to explore the power of
+                JavaScript and its capabilities in building a dynamic, real-time
+                game that adapts to the user's skill level.
+              </p>
+            </div>
+            <div>
+              <b>Solution:</b>
+              <ul>
+                <li>
+                  • Built a responsive, user-friendly platform using HTML5,
+                  CSS3, and JavaScript to create an engaging game experience.
+                </li>
+                <li>
+                  • Implemented four levels of difficulty, increasing in
+                  complexity to challenge users and help them improve their
+                  typing skills progressively.
+                </li>
+                <li>
+                  • Integrated real-time feedback, allowing users to track their
+                  performance and provide immediate feedback on their typing.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <b>Impact:</b>
+              <ul>
+                <li>
+                  • Helped users enhance their typing accuracy and speed through
+                  a fun, interactive platform.
+                </li>
+                <li>
+                  • Provided an engaging way to learn and practice typing
+                  skills, suitable for all levels.
+                </li>
+                <li>
+                  • Encouraged continuous improvement by offering progressively
+                  challenging levels.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </>
+    ),
+    stack: [
+      { id: 1, label: "HTML5" },
+      { id: 2, label: "CSS3" },
+      { id: 3, label: "JavaScript" },
+    ],
+    github: "https://github.com/jemcap/speed-typer",
+    website: "https://speed-typer-tool.netlify.app/",
+  },
+
   // {
   //   id: uuidv4(),
   //   title: "Block Buster",
@@ -356,9 +427,10 @@ export const projectsList = [
   //   website: "https://blockbustergame.netlify.app/",
   // },
   {
-    id: uuidv4(),
-    title: "Online Portfolio",
+    id: "5",
+    title: "joshcapito.dev",
     type: "Personal project",
+    thumbnail: JoshCapitoDevThumbnail,
     image: Portfolio,
     description: (
       <>
@@ -424,7 +496,8 @@ export const projectsList = [
       { id: 1, label: "React" },
       { id: 2, label: "TailwindCSS" },
       { id: 3, label: "Framer Motion" },
-      { id: 4, label: "EmailJS" },
+      { id: 4, label: "React Router" },
+      { id: 5, label: "EmailJS" },
     ],
     github: "https://github.com/jemcap/projects-portfolio",
     website: "#",

@@ -3,6 +3,7 @@ import UpcomingProjects from "./UpcomingProjects";
 import Contributions from "./Contributions";
 import { projectsList } from "../constants/lists";
 import { GithubIcon } from "../utils/utils";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -14,13 +15,14 @@ const Projects = () => {
             Check out some of my projects I've done below
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-12 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {projectsList.map((project) => {
             const {
               id,
               title,
               type,
               image,
+              thumbnail,
               description,
               stack,
               github,
@@ -29,16 +31,35 @@ const Projects = () => {
             return (
               <div
                 key={id}
-                className="card card-side bg-base-100 shadow-lg mt-6"
+                className="relative group bg-base-100 shadow-2xl hover:shadow-2xl  transition-all 2s ease cursor-pointer"
               >
-                <figure className="hidden md:flex md:flex-[0.35]">
-                  <img
-                    src={image}
-                    alt={title}
-                    className="object-cover w-[750px] h-full hidden md:flex"
-                  />
-                </figure>
-                <div className="card-body flex-1 max-lg:gap-8">
+                <Link to={`/project/${id}`}>
+                  <figure className=" w-full ">
+                    <img
+                      src={thumbnail}
+                      alt={title}
+                      className="object-cover w-full h-full "
+                    />
+                  </figure>
+
+                  <div className="absolute inset-0 flex gap-10 flex-col items-center justify-center bg-black backdrop-blur bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white text-xl font-bold">{title}</p>
+                    <ul className="grid grid-cols-3 gap-2">
+                      {stack.map((item) => {
+                        const { id, label } = item;
+                        return (
+                          <li
+                            key={id}
+                            className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 p-1 rounded-xl text-xs"
+                          >
+                            {label}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </Link>
+                {/* <div className="card-body flex-1 max-lg:gap-8">
                   <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start sm:items-center">
                     <h2 className="card-title text-xl max-sm:text-2xl">
                       {title}
@@ -104,7 +125,7 @@ const Projects = () => {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             );
           })}

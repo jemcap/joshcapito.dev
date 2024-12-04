@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         element: <Landing />,
       },
       {
-        path: "/work",
+        path: "/project/:id",
         element: <Work />,
       },
     ],
