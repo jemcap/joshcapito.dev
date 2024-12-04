@@ -90,7 +90,7 @@ export const projectsList = [
             needs.
           </p>
 
-          <div className="border-l-2 pl-5 text-xs flex flex-col gap-5 my-5">
+          <div className="text-xs flex flex-col gap-5 my-5">
             <div>
               <b>Problem/Opportunity:</b>
               <p>
@@ -169,7 +169,7 @@ export const projectsList = [
               view the original site here
             </OriginalWebsiteLink>
           </p>
-          <div className="border-l-2 pl-5 text-xs flex flex-col gap-5 my-5">
+          <div className="text-xs flex flex-col gap-5 my-5">
             <div>
               <b>Problem/Opportunity:</b>
               <p>
@@ -241,7 +241,7 @@ export const projectsList = [
             Solace Furnitures is a modern ecommerce platform designed to provide
             a great shopping experience for furniture enthusiasts.
           </p>
-          <div className="border-l-2 pl-5 text-xs flex flex-col gap-5 my-5">
+          <div className=" text-xs flex flex-col gap-5 my-5">
             <div>
               <b>Problem/Opportunity:</b>
               <p>
@@ -320,7 +320,7 @@ export const projectsList = [
             and sentences. This project blends education and entertainment,
             providing a fun and effective way to improve typing skills.
           </p>
-          <div className="border-l-2 pl-5 text-xs flex flex-col gap-5 my-5">
+          <div className="text-xs flex flex-col gap-5 my-5">
             <div>
               <b>Problem/Opportunity:</b>
               <p>
@@ -442,7 +442,7 @@ export const projectsList = [
             demonstrating my skills to create visually appealing and functional
             web applications.
           </p>
-          <div className="border-l-2 pl-5 text-xs flex flex-col gap-5 my-5">
+          <div className=" text-xs flex flex-col gap-5 my-5">
             <div>
               <b>Problem/Opportunity:</b>
               <p>

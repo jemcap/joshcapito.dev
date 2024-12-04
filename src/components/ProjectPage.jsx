@@ -32,7 +32,7 @@ const ProjectPage = ({ id }) => {
           {stack.map((item) => (
             <li
               key={item.id}
-              className="border-2 sm:border-4 text-indigo-700 bg-indigo-100 border-indigo-200 border-b-indigo-300 flex items-center p-1 rounded-xl text-xs"
+              className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 p-1 rounded-xl flex items-center  text-xs"
             >
               {item.label}
             </li>

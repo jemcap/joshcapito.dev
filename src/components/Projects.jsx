@@ -17,17 +17,7 @@ const Projects = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {projectsList.map((project) => {
-            const {
-              id,
-              title,
-              type,
-              image,
-              thumbnail,
-              description,
-              stack,
-              github,
-              website,
-            } = project;
+            const { id, title, thumbnail, stack } = project;
             return (
               <div
                 key={id}
@@ -38,19 +28,19 @@ const Projects = () => {
                     <img
                       src={thumbnail}
                       alt={title}
-                      className="object-cover w-full h-full "
+                      className="object-cover w-full h-full"
                     />
                   </figure>
 
                   <div className="absolute inset-0 flex gap-10 flex-col items-center justify-center bg-black backdrop-blur bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <p className="text-white text-xl font-bold">{title}</p>
-                    <ul className="grid grid-cols-3 gap-2">
+                    <ul className="grid grid-cols-3 gap-2 ">
                       {stack.map((item) => {
                         const { id, label } = item;
                         return (
                           <li
                             key={id}
-                            className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 p-1 rounded-xl text-xs"
+                            className="border-4 text-pink-700 bg-pink-100 border-pink-200 border-b-pink-300 p-1 rounded-xl text-[0.55rem] text-center flex justify-center items-center"
                           >
                             {label}
                           </li>
