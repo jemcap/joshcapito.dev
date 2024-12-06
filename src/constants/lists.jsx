@@ -231,7 +231,7 @@ export const projectsList = [
   {
     id: "3",
     title: "Solace Furnitures",
-    type: "Exploration project",
+    type: "E-commerce project",
     thumbnail: SolaceFurnituresThumbnail,
     image: SolaceFurnitures,
     description: (
@@ -429,7 +429,7 @@ export const projectsList = [
   {
     id: "5",
     title: "joshcapito.dev",
-    type: "Personal project",
+    type: "Portfolio project",
     thumbnail: JoshCapitoDevThumbnail,
     image: Portfolio,
     description: (
@@ -508,7 +508,7 @@ export const projectsContributions = [
   {
     id: uuidv4(),
     title: "East London Waterworks Park",
-    type: "Volunteering",
+    type: "Volunteering project",
     year: "2024/2025",
     description: (
       <>
@@ -535,7 +535,7 @@ export const projectsContributions = [
     id: uuidv4(),
     title:
       "Nottingham Trent University Design Industries (NTUDI) — Committee of '22",
-    type: "Industry Project",
+    type: "Industry project",
     year: "2021/2022",
     description: (
       <p>
@@ -552,7 +552,7 @@ export const projectsContributions = [
     id: uuidv4(),
     title:
       "Nottingham Trent University Design Industries (NTUDI) — Committee of '21",
-    type: "Industry Project",
+    type: "Industry project",
     description: (
       <p>
         Enrolled as a team assistant/assistant web designer for the Nottingham
@@ -570,8 +570,8 @@ export const projectsContributions = [
 export const projectsInProgress = [
   {
     id: uuidv4(),
-    title: "TheUpcyclingCommunity",
-    type: "Startup Project",
+    title: "The Upcycle Community",
+    type: "Community-focused project",
     description:
       "A community-driven platform focused on upcycling plastic waste into valuable products. The initiative aims to raise awareness about sustainable practices, inspire creative reuse and encourage creativity among individuals, and empower individuals to contribute to environmental conservation. Through workshops, resources, and collaboration, the platform fosters innovation and promotes a circular economy.",
   },
