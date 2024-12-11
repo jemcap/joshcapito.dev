@@ -21,8 +21,8 @@ const Projects = () => {
               title,
               type,
               problemOpportunity,
-    solution,
-    impact,
+              solution,
+              impact,
               "thumbnail": thumbnail.asset->url,
               stack,
             }`;
@@ -44,8 +44,25 @@ const Projects = () => {
     fetchProjects();
   }, []);
 
-  if (isLoading) return <h1>Loading...</h1>;
-  if (error) return <h1>{error}</h1>;
+  if (isLoading) {
+    return (
+      <div className="flex flex-col h-screen items-center justify-center">
+        <div className="flex w-64 flex-col gap-4">
+          <div className="skeleton h-32 w-full"></div>
+          <div className="skeleton h-32 w-full"></div>
+          <div className="skeleton h-32 w-full"></div>
+          <div className="skeleton h-32 w-full"></div>
+        </div>
+      </div>
+    );
+  }
+  if (error) {
+    return (
+      <div className="h-screen flex items-center justify-center">
+        <h1>{error}</h1>
+      </div>
+    );
+  }
 
   return (
     <section className=" h-full py-20">

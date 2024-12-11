@@ -5,12 +5,14 @@ import { PortableText } from "@portabletext/react";
 
 const ProjectPage = () => {
   const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(null);
   const id = useParams().id;
 
   useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "project"]{
+    const getProject = async () => {
+      try {
+        const query = `*[_type == "project"]{
           _id,
           title,
           type,
@@ -23,18 +25,39 @@ const ProjectPage = () => {
           stack,
           github,
           website
-        }`
-      )
-      .then((data) => {
+        }`;
+        const data = await client.fetch(query);
         setProjects(data);
-      })
-      .catch(console.error);
+      } catch (error) {
+        console.error("Error fetching projects:", error);
+        setIsError("Error fetching projects");
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    getProject();
   }, []);
 
   const project = projects.find((project) => project._id === id);
+  if (isLoading) {
+    return (
+      <div className="flex flex-col h-screen items-center justify-center">
+        <div className="flex w-64 flex-col gap-4">
+          <div className="skeleton h-32 w-full"></div>
+          <div className="skeleton h-4 w-28"></div>
+          <div className="skeleton h-4 w-full"></div>
+          <div className="skeleton h-4 w-full"></div>
+        </div>
+      </div>
+    );
+  }
 
-  if (!project) {
-    return <p>Project not found.</p>; // Handle invalid project ID
+  if (isError) {
+    return (
+      <div className="h-screen flex items-center justify-center">
+        <h1>{isError}</h1>
+      </div>
+    );
   }
 
   const {
