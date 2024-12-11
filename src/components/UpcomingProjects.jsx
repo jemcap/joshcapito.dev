@@ -1,6 +1,36 @@
 import { projectsInProgress } from "../constants/lists";
 
+import { useState, useEffect } from "react";
+
+import { client } from "../client";
+
 const UpcomingProjects = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchUpcomingProjects = async () => {
+      try {
+        const query = `*[_type == 'upcomingProjects']{
+        _id,
+        title,
+        type,
+        description,
+        projectStatus
+        }`;
+        const data = await client.fetch(query);
+        if (data.length > 0) {
+          console.log(data);
+          setProjects(data);
+        } else {
+          console.log("Projects not found");
+        }
+      } catch (error) {
+        console.log("Error fetching projects:", error);
+      }
+    };
+    fetchUpcomingProjects();
+  }, []);
+
   return (
     <>
       <div className="flex flex-col gap-10 align-elements pb-20 border-b-2 border-neutral-300 border-t-2 border-t-neutral-300 py-20 my-20">
@@ -11,44 +41,36 @@ const UpcomingProjects = () => {
           </p>
         </div>
         <div>
-          {projectsInProgress.map((project) => {
-            const { id, title, type, description } = project;
+          {projects.map((project) => {
+            const { _id, title, type, description, projectStatus } = project;
             return (
               <div
-                key={id}
+                key={_id}
                 className="text-start md:mx-20 my-20 border-l-2 pl-5"
               >
-                <h1 className="text-xl font-semibold">{title}</h1>
-                <small className="text-neutral-500">{type}</small>
+                <div className="flex flex-col gap-5 lg:flex-row justify-between">
+                  <div>
+                    <h1 className="text-xl font-semibold">{title}</h1>
+                    <small className="text-neutral-500">
+                      {type.join(", ")}
+                    </small>
+                  </div>
+                  <div>
+                    <small
+                      className={`mt-5 py-1 px-2 rounded-full border-2 border-b-4 text-justify text-xs ${
+                        projectStatus === "In Progress"
+                          ? "border-green-300 bg-green-200"
+                          : "border-yellow-300 bg-yellow-200"
+                      }`}
+                    >
+                      {projectStatus}
+                    </small>
+                  </div>
+                </div>
                 <p className="mt-5 text-justify text-sm">{description}</p>
               </div>
             );
           })}
-        </div>
-        <div>
-          <a
-            href="https://github.com/jemcap"
-            target="_blank"
-            noopener
-            noreferrer
-            className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
-          >
-            <span className="text-sm" aria-label="View GitHub Projects button">
-              View More Projects
-            </span>
-            <svg
-              class="w-4"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              className="w-6 h-6 ml-2"
-            >
-              <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-            </svg>
-          </a>
         </div>
       </div>
     </>

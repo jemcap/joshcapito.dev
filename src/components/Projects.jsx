@@ -66,7 +66,7 @@ const Projects = () => {
 
   return (
     <section className=" h-full py-20">
-      <div className="flex flex-col gap-10 align-elements  pb-20">
+      <div className="flex flex-col gap-10 align-elements pb-10">
         <div className="text-center">
           <h1 className=" text-2xl font-bold">Featured Projects</h1>
           <p className="text-xs">
@@ -110,7 +110,33 @@ const Projects = () => {
             );
           })}
         </div>
+        <div className="mt-10">
+          <a
+            href="https://github.com/jemcap"
+            target="_blank"
+            noopener
+            noreferrer
+            className=" items-center text-white border bg-black rounded-full py-2 px-6 gap-2 inline-flex "
+          >
+            <span className="text-sm" aria-label="View GitHub Projects button">
+              View More Projects
+            </span>
+            <svg
+              class="w-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              className="w-6 h-6 ml-2"
+            >
+              <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
       </div>
+
       <section className="mt-20">
         <UpcomingProjects />
         <Contributions />
