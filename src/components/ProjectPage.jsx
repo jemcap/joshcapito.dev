@@ -61,13 +61,15 @@ const ProjectPage = () => {
         />
       </div>
       <div className="card-body flex-1 max-lg:gap-8 w-full">
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start sm:items-center">
+        <div className="flex flex-row flex-wrap gap-2 items-start justify-between">
           <h2 className="card-title text-xl max-sm:text-2xl">{title}</h2>
-          {type.map((item) => (
-            <small className="border-2 sm:border-4 text-indigo-700 bg-indigo-100 border-indigo-200 border-b-indigo-300 flex items-center p-1 rounded-xl text-xs">
-              {item}
-            </small>
-          ))}
+          <div className="flex flex-row gap-2 flex-wrap">
+            {type.map((item) => (
+              <small className=" border-2 sm:border-4 text-indigo-700 bg-indigo-100 border-indigo-200 border-b-indigo-300 flex items-center p-1 rounded-xl text-xs">
+                {item}
+              </small>
+            ))}
+          </div>
         </div>
         <div className="flex flex-col gap-5">
           {/* Use PortableText for rich text rendering */}

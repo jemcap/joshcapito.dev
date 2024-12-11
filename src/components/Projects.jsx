@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import UpcomingProjects from "./UpcomingProjects";
 import Contributions from "./Contributions";
-import { projectsList } from "../constants/lists";
+
 import { GithubIcon } from "../utils/utils";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
