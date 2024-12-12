@@ -17,13 +17,13 @@ const UpcomingProjects = () => {
         }`;
         const data = await client.fetch(query);
         if (data.length > 0) {
-          console.log(data);
           setProjects(data);
         } else {
           console.log("Projects not found");
         }
       } catch (error) {
         console.log("Error fetching projects:", error);
+        throw new Error(error.message);
       }
     };
     fetchUpcomingProjects();

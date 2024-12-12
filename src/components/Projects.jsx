@@ -29,7 +29,6 @@ const Projects = () => {
 
         const data = await client.fetch(query);
         if (data.length > 0) {
-          console.log(data);
           setProjectData(data);
         } else {
           setError("Projects not found");
