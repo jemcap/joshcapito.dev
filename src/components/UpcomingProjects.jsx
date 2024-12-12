@@ -1,5 +1,3 @@
-import { projectsInProgress } from "../constants/lists";
-
 import { useState, useEffect } from "react";
 
 import { client } from "../client";
@@ -56,15 +54,22 @@ const UpcomingProjects = () => {
                     </small>
                   </div>
                   <div>
-                    <small
-                      className={`mt-5 py-1 px-2 rounded-full border-2 border-b-4 text-justify text-xs ${
+                    <div
+                      className={`flex justify-between w-fit gap-2 items-center mt-5 py-1 px-2 rounded-full border-2 border-b-4 text-justify text-xs ${
                         projectStatus === "In Progress"
-                          ? "border-green-300 bg-green-200"
-                          : "border-yellow-300 bg-yellow-200"
+                          ? "border-blue-300 bg-blue-200"
+                          : "border-orange-300 bg-orange-200"
                       }`}
                     >
+                      <div
+                        className={`w-2 h-2 ${
+                          projectStatus === "In Progress"
+                            ? "bg-blue-500"
+                            : "bg-orange-500"
+                        } rounded-full`}
+                      ></div>
                       {projectStatus}
-                    </small>
+                    </div>
                   </div>
                 </div>
                 <p className="mt-5 text-justify text-sm">{description}</p>

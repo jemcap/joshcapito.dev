@@ -1,11 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import {
-  aboutInfo,
-  experienceInfo,
-  learningStack,
-  techStackList,
-} from "../constants/lists";
+import { aboutInfo, experienceInfo } from "../constants/lists";
 
 export const Highlight = ({ children, delay = 0 }) => {
   return (
@@ -65,7 +60,7 @@ const About = () => {
                 }}
                 viewport={{ once: true }}
               >
-                <h1 className="text-4xl  font-bold">Hi, I'm Josh.</h1>
+                <h1 className="text-4xl  font-bold">Joshua Capito</h1>
                 <small className="text-gray-700">Frontend Web Developer</small>
               </motion.div>
               <motion.h2
