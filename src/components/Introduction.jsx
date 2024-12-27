@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
-import { HiArrowLongDown } from "react-icons/hi2";
 
 import { socialMediaIcons } from "../constants/lists";
 import { useRef, useEffect } from "react";
-import { useGlobalContext } from "../context/context";
+import { CgMouse } from "react-icons/cg";
 
 const Introduction = () => {
-  const { scrollToAbout } = useGlobalContext();
   const socialRef = useRef([]);
 
   const displayIcons = () => {
@@ -82,23 +80,18 @@ const Introduction = () => {
           })}
         </ul>
       </div>
-      <motion.a
+      <motion.div
         href="#"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 3.5 }}
-        className=" flex flex-col justify-center items-center gap-2 mt-12"
+        className=" flex flex-col justify-center items-center mt-20"
       >
-        <span>
-          <button
-            type="button"
-            onClick={scrollToAbout}
-            aria-label="Scroll to About section"
-          >
-            <HiArrowLongDown className="text-5xl lg:text-5xl font-bold hover:text-yellow-500 transition-all 2s easeInOut" />
-          </button>
-        </span>
-      </motion.a>
+        <div className="flex flex-col justify-center items-center gap-2">
+          <CgMouse className="text-3xl font-bold" />
+          <small className="text-xs font-bold">scroll down</small>
+        </div>
+      </motion.div>
     </div>
   );
 };
