@@ -220,6 +220,15 @@ export const aboutInfo = [
 ];
 
 export const experienceInfo = [
+  // TODO: Automate this array using Sanity.io
+  {
+    id: uuidv4(),
+    date: "Jan 2025—Present",
+    company: "Risidio",
+    role: "Software Developer Intern",
+    description:
+      "Risidio, based in London, UK, is a company dedicated to empowering creators and communities by leveraging cutting-edge technologies like Blockchain and Web3. As a Software Developer Intern at Risidio, I will be actively contributing to their groundbreaking projects, focusing on harnessing these technologies to drive innovative and collaborative solutions. My role involves exploring cutting-edge advancements, implementing robust software solutions, and supporting the development of platforms that align with Risidio's mission to reshape the digital landscape for creators and their communities.",
+  },
   {
     id: uuidv4(),
 
