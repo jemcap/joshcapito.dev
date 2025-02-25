@@ -61,7 +61,7 @@ const About = () => {
                 viewport={{ once: true }}
               >
                 <h1 className="text-4xl  font-bold">Joshua Capito</h1>
-                <small className="text-gray-700">Frontend Web Developer</small>
+                <small className="text-gray-700">Web Developer</small>
               </motion.div>
               <motion.h2
                 initial={{ opacity: 0, x: -100 }}
@@ -73,9 +73,11 @@ const About = () => {
                 viewport={{ once: true }}
                 className="text-sm lg:text-sm font-light text-start text-gray-700"
               >
-                I'm a <Highlight delay="1">Frontend Web Developer</Highlight>{" "}
-                with a background in Product Design. My{" "}
-                <Highlight delay="1.5">passion for UX/UI design</Highlight>{" "}
+                I'm a <Highlight delay="1">Web Developer</Highlight> with a
+                background in Product Design. My{" "}
+                <Highlight delay="1.5">
+                  passion for digital technology
+                </Highlight>{" "}
                 fuels my creativity and inspires me to create innovative coding
                 solutions and{" "}
                 <Highlight delay="2">

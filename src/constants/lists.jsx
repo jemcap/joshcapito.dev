@@ -163,12 +163,6 @@ export const aboutInfo = [
           grow creatively.{" "}
         </p>{" "}
         <p>
-          I've had opportunities to work on a variety of projects, contributing
-          to development efforts for different organisations along the way.
-          Right now, I help small, local businesses grow by designing and
-          building bespoke websites that really support their online presence.
-        </p>
-        <p>
           {" "}
           Outside of work, I explore my creative passions, including
           cinematography, photography, and playing the piano or guitar. I'm also
