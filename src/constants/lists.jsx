@@ -217,20 +217,27 @@ export const experienceInfo = [
   // TODO: Automate this array using Sanity.io
   {
     id: uuidv4(),
-    date: "Jan 2025—Present",
-    company: "Risidio",
-    role: "Software Developer Intern",
-    description:
-      "Risidio, based in London, UK, is a company dedicated to empowering creators and communities by leveraging cutting-edge technologies like AI, Blockchain, and Web3. As a Software Developer Intern at Risidio, I will be actively contributing to their groundbreaking projects, focusing on harnessing these technologies to drive innovative and collaborative solutions. My role involves exploring cutting-edge advancements, implementing robust software solutions, and supporting the development of platforms that align with Risidio's mission to reshape the digital landscape for creators and their communities.",
-  },
-  {
-    id: uuidv4(),
 
     date: "Aug 2024—Present",
     company: "Independent Web Developer (Pro Bono projects)",
     role: "Volunteer Web Developer for local and small businesses",
     description:
       "I reach out to small and local businesses, collaborating closely with business owners to understand their requirements and deliver tailored solutions that aligned with their goals. By taking on these pro bono projects, I expand my technical expertise and contributed to the growth of small businesses in my community.",
+  },
+  {
+    id: uuidv4(),
+    date: "Jan 2025—May 2025",
+    company: "Risidio",
+    role: "Software Developer",
+    description:
+      "Contributed to establishing the system architecture and built features for an MVP for FilmFusion, a decentralised application (dApp) for independent creators and filmmakers to take ownership of their work, and enforce better transparency through Web3 technology, by developing Smart Contracts, and helped to develop the frontend of FilmFusion web application.",
+    stack: [
+      { id: 1, tech: "Solidity" },
+      { id: 2, tech: "Ethers.js" },
+      { id: 3, tech: "Node.js" },
+      { id: 4, tech: "NextJS" },
+      { id: 4, tech: "TypeScript" },
+    ],
   },
   {
     id: uuidv4(),
@@ -259,7 +266,6 @@ export const experienceInfo = [
     stack: [
       { id: 1, tech: "Amazon Web Services" },
       { id: 2, tech: "Terraform" },
-      { id: 3, tech: "Gitlab CI/CD" },
       { id: 4, tech: "Python" },
       { id: 5, tech: "GraphQL" },
     ],
@@ -269,7 +275,7 @@ export const experienceInfo = [
 
     date: "Sep 2023—Dec 2023",
     company: "PolicyCON ltd.",
-    role: "Front End Web Developer Intern",
+    role: "Front End Web Developer",
     description:
       "Redesigned webpages to enhance UX/UI and accessibility, developing responsive features with React, TypeScript, and TailwindCSS for improved performance. Refactored the codebase for maintainability using modular design, authored technical documentation for future development, and tested authentication components with Cypress to boost reliability. Actively participated in Scrum meetings, aligning goals and ensuring deliverables.",
     stack: [
